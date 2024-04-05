@@ -6,7 +6,7 @@
   <link href="https://infinitesum.github.io/atom.xml" rel="self"/>
   
   <link href="https://infinitesum.github.io/"/>
-  <updated>2024-04-05T11:25:28.000Z</updated>
+  <updated>2024-03-31T00:30:48.000Z</updated>
   <id>https://infinitesum.github.io/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title></title>
-    <link href="https://infinitesum.github.io/%E6%9C%AA%E5%91%BD%E5%90%8D/"/>
-    <id>https://infinitesum.github.io/%E6%9C%AA%E5%91%BD%E5%90%8D/</id>
-    <published>2024-04-05T11:25:48.432Z</published>
-    <updated>2024-04-05T11:25:28.000Z</updated>
-    
-    <content type="html"><![CDATA[<script src="https://gist.github.com/weekdaycare/309b34cf95013cccb0265dc614e0735c.js"></script>]]></content>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;script</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Stellar 主题中添加分类索引 Widget</title>

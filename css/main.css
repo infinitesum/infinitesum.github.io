@@ -933,7 +933,7 @@ h1,
 .h1 {
   font-family: 'SuCaiJiShi-SheHuiTi';
   font-size: var(--fsh1);
-  font-weight: 700;
+  font-weight: 400;
 }
 @media screen and (max-width: 500px) {
   h1,

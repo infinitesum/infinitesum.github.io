@@ -1,7 +1,8 @@
 :root {
   --width-main: 720px;
   --fsp: 17px;
-  --fsh2: calc(var(--fsp) + 11px);
+  --fsh1: calc(var(--fsp) + 14px);
+  --fsh2: calc(var(--fsp) + 10px);
   --fsh3: calc(var(--fsp) + 7px);
   --fsh4: calc(var(--fsp) + 4px);
   --side-content-width: 224px;
@@ -411,10 +412,17 @@ code {
 p>code:not([class]),
 li>code:not([class]) {
   font-size: 85%;
-  background: var(--block);
+  background: #e1e1e1;
   padding: 0.2em;
   border-radius: 4px;
   color: var(--text-code);
+}
+@media (prefers-color-scheme: dark) {
+  p>code:not([class]),
+  li>code:not([class]) {
+    background: var(--block); /* 暗黑模式下保持原样 */
+/* 其他样式保持不变 */
+  }
 }
 .md-text .highlight,
 pre:not([class]):has(>code) {
@@ -923,7 +931,8 @@ svg.active-icon {
 }
 h1,
 .h1 {
-  font-size: var(--fsh2);
+  font-family: 'SuCaiJiShi-SheHuiTi';
+  font-size: var(--fsh1);
   font-weight: 700;
 }
 @media screen and (max-width: 500px) {

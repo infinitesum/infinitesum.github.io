@@ -1135,6 +1135,7 @@ div.toast.show {
 }
 .article.banner .content .title {
   font-size: calc(17px + 9px);
+  font-weight: 800;
   color: var(--text-banner);
 }
 .article.banner .content h1 {

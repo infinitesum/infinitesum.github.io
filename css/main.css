@@ -931,9 +931,8 @@ svg.active-icon {
 }
 h1,
 .h1 {
-  font-family: 'SuCaiJiShi-SheHuiTi';
   font-size: var(--fsh1);
-  font-weight: 400;
+  font-weight: 800;
 }
 @media screen and (max-width: 500px) {
   h1,

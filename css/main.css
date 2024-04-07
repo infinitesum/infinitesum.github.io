@@ -1135,7 +1135,7 @@ div.toast.show {
 }
 .article.banner .content .title {
   font-size: calc(17px + 9px);
-  font-weight: 700;
+  font-weight: 600;
   color: var(--text-banner);
 }
 .article.banner .content h1 {
@@ -5692,7 +5692,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   margin-top: 0.5rem;
 }
 .l_main .post-list .post-title {
-  font-weight: 600;
+  font-weight: 550;
   margin: 1.25rem auto 0.75rem 0;
   line-height: 1.2;
   font-size: calc(17px + 4px);

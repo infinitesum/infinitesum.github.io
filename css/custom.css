@@ -51,3 +51,7 @@
     left: 50%;
     transform: translate(-50%, -48px);
 }
+
+.el-input.el-input--small.el-input-group.el-input-group--prepend::before, .el-input.el-input--small.el-input-group.el-input-group--prepend::after {
+    z-index: 9999; /* 提高层级，确保内容显示在最前 */
+}

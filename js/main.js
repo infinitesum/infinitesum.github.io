@@ -52,8 +52,11 @@ const util = {
   },
 
   scrollTop: () => {
-    window.scrollTo({top: 0, behavior: "smooth"});
+    window.scrollTo({top: 0});
   },
+
+  scrollComment: () => {
+    document.getElementById('comments').scrollIntoView();  },
 }
 
 const hud = {

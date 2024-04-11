@@ -1,0 +1,14 @@
+/* 默认的浅色模式颜色 */
+:root {
+    --tag-bg-color: #F2EEFD;
+    --tag-text-color: #835EEC;
+  }
+  
+  /* 暗黑模式下的颜色 */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --tag-bg-color: #282433;
+      --tag-text-color: #A28BF2;
+    }
+  }
+  

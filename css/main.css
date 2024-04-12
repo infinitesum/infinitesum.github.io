@@ -92,11 +92,6 @@
     --text-code: #fff;
   }
 }
-@media screen and (prefers-color-scheme: dark) and (max-width: 667px) {
-  :root {
-    --site-bg: #1f1f1f;
-  }
-}
 pre {
   font-family: Menlo, Monaco, Consolas, system-ui, "Courier New", monospace, sans-serif;
   font-size: 0.8125rem;

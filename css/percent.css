@@ -1,7 +1,0 @@
-#scrollButton:hover #percent {
-    display: none; /* 鼠标悬停时隐藏百分比 */
-}
-
-#scrollButton:hover #upIcon {
-    display: inline; /* 或者 "block", 取决于图标应该如何显示 */
-}

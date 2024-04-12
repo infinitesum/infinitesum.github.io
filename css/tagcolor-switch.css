@@ -4,20 +4,11 @@
     --tag-text-color: #835EEC;
   }
   
-  /* 暗黑模式下的颜色 
+  /* 暗黑模式下的颜色 */
   @media (prefers-color-scheme: dark) {
     :root {
       --tag-bg-color: #282433;
       --tag-text-color: #A28BF2;
-    }
-  }
-  
-
-  /* 暗黑模式下的颜色 */
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --tag-bg-color: #635C6F;
-      --tag-text-color: rgb(224, 220, 234);
     }
   }
   

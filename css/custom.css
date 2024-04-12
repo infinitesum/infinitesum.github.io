@@ -55,3 +55,29 @@
 .el-input.el-input--small.el-input-group.el-input-group--prepend::before, .el-input.el-input--small.el-input-group.el-input-group--prepend::after {
     z-index: 9999; /* 提高层级，确保内容显示在最前 */
 }
+
+.search-input::placeholder {
+    color: #d7d5d5; /* 设置占位符颜色 */
+    font-style: italic; /* 也可以设置其他样式，比如斜体 */
+    
+}
+
+/* 明亮模式下的占位符颜色 */
+@media (prefers-color-scheme: dark) {
+    .search-input::placeholder {
+        color: #d7d5d5; /* 浅灰色 */
+        font-style: italic; /* 斜体 */
+    }
+}
+
+/* 暗黑模式下的占位符颜色 */
+@media (prefers-color-scheme: light) {
+    .search-input::placeholder {
+        color: #6f6f6f; /* 深灰色，根据需要可以更改 */
+    }
+}
+
+
+.md-text.content {
+    margin-top: 10px; /* 这会在article上方增加20px的空间 */
+}

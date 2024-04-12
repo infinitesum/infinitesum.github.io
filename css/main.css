@@ -94,7 +94,7 @@
 }
 @media screen and (prefers-color-scheme: dark) and (max-width: 667px) {
   :root {
-    --site-bg: #000;
+    --site-bg: var(--site-bg);
   }
 }
 pre {

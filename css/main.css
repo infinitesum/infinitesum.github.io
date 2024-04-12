@@ -90,11 +90,9 @@
     --text-p4: #b8b8b8;
     --text-meta: #a6a6a6;
     --text-code: #fff;
-  }
-}
-@media screen and (prefers-color-scheme: dark) and (max-width: 667px) {
-  :root {
-    --site-bg: #000;
+/*@media screen and (max-width: $device-mobile-max)
+      --site-bg: black
+*/
   }
 }
 pre {

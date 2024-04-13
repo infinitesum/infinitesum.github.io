@@ -5073,7 +5073,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   background: var(--alpha50);
 }
 .widget-wrapper.toc {
-  background: var(--alpha50);
+/*background: var(--alpha50)*/
   border-radius: 14px;
   z-index: 3;
 }

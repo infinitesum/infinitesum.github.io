@@ -412,7 +412,7 @@ code {
 p>code:not([class]),
 li>code:not([class]) {
   font-size: 85%;
-  background: #e1e1e1;
+  background: #ededed;
   padding: 0.2em;
   border-radius: 4px;
   color: var(--text-code);

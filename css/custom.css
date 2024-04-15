@@ -58,9 +58,13 @@
 
 
 .post-count {
-    font-weight: 500;
+    /*font-weight: 500;*/
     font-size: 0.8125rem;
     scrollbar-width: none;
+    color: var(--text-p4);
+  }
+
+.totalcount {
     color: var(--text-p4);
   }
 

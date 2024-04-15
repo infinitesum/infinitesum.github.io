@@ -5698,7 +5698,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 }
 .l_main .post-list .post-title {
   font-weight: 500;
-  margin: 1.25rem auto 0.75rem 0;
+  margin: 0.8rem auto 0.5rem 0;
   line-height: 1.2;
   font-size: calc(17px + 4px);
   border-bottom: none;
@@ -5745,7 +5745,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   }
 }
 .post-list .post-card .excerpt {
-  margin: 1rem 0;
+  margin: 0.8rem 0;
 }
 @media screen and (max-width: 500px) {
   .post-list .post-card .excerpt {
@@ -5753,7 +5753,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   }
 }
 .post-list .post-card .excerpt >p {
-  margin: 1rem 0;
+  margin: 0.8rem 0;
   line-height: 1.5;
 }
 @media screen and (max-width: 500px) {

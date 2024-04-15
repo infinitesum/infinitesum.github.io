@@ -59,7 +59,7 @@
 
 .post-count {
     /*font-weight: 500;*/
-    font-size: 0.8125rem;
+    /*font-size: 0.8125rem;*/
     scrollbar-width: none;
     color: var(--text-p4);
   }
@@ -143,3 +143,7 @@
     /* Add other styles specific to the toggle-font widget here */
 }
 
+#post-meta {
+  font-size: 12px; /* 设置为12像素，你可以根据需要调整这个值 */
+  color: var(--text-p4); /* 设置为灰色，你可以根据需要调整这个值 */
+}

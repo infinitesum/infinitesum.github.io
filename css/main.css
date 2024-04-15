@@ -55,6 +55,7 @@
     --theme-link-opa: rgba(160,142,210,0.2);
     --leftbar-bg: #e5e5e6;
     --alpha20: rgba(255,255,255,0.2);
+    --alpha40: rgba(255,255,255,0.4);
     --alpha50: rgba(255,255,255,0.5);
     --alphagg: rgba(128,128,128,0.05);
     --alpha60: rgba(255,255,255,0.6);
@@ -4896,7 +4897,12 @@ details.toc[open] >div.body section .header+.doc_tree {
   background: var(--alpha50);
 }
 .widget-wrapper.post-list .widget-body a:hover {
-  background: var(--alpha40);
+  background: var(--alpha100);
+}
+@media (prefers-color-scheme: dark) {
+  .widget-wrapper.post-list .widget-body a:hover {
+    background: var(--alpha40);
+  }
 }
 .widget-wrapper.post-list .widget-body a+a {
   margin-top: 2px;

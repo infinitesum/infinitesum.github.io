@@ -6062,7 +6062,7 @@ body>.sitebg .siteblur:hover {
   --fsp: calc(17px - 1px);
   font-size: var(--fsp);
   line-height: 1.5;
-  color: var(--text-p3);
+  color: var(--text-p1);
 }
 .md-text blockquote p code,
 .md-text ul p code,

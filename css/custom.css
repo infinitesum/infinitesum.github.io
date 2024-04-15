@@ -144,6 +144,6 @@
 }
 
 #post-meta {
-  font-size: 12px; /* 设置为12像素，你可以根据需要调整这个值 */
-  color: var(--text-p4); /* 设置为灰色，你可以根据需要调整这个值 */
+  font-size: 12px; 
+  color: var(--text-p4); /* 或 --text-p2，设置为灰色 */
 }

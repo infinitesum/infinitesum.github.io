@@ -147,3 +147,16 @@
   font-size: 12px; 
   color: var(--text-p4); /* 或 --text-p2，设置为灰色 */
 }
+
+/* 设置图标颜色 */
+/* 白天模式，默认填充色为黑色 */
+.theme-icon {
+  fill: black;
+}
+
+/* 暗黑模式，填充色为白色 */
+@media (prefers-color-scheme: dark) {
+  .theme-icon {
+      fill: white;
+  }
+}

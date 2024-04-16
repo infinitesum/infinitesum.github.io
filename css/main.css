@@ -2,9 +2,9 @@
   --width-main: 720px;
   --fsp: 17px;
   --fsh1: calc(var(--fsp) + 14px);
-  --fsh2: calc(var(--fsp) + 11px);
-  --fsh3: calc(var(--fsp) + 7px);
-  --fsh4: calc(var(--fsp) + 4px);
+  --fsh2: calc(var(--fsp) + 10px);
+  --fsh3: calc(var(--fsp) + 5px);
+  --fsh4: calc(var(--fsp) + 3px);
   --side-content-width: 224px;
   --gap-margin: 16px;
   --gap-padding: 16px;

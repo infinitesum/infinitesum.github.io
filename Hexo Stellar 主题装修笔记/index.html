@@ -34,7 +34,7 @@
 <meta property="og:image" content="https://infinitesum.github.io/asset/posts/CleanShot%202024-04-16%20at%2023.29.30@2x.png">
 <meta property="og:image" content="https://infinitesum.github.io/asset/posts/Pasted%20image%2020240417002204.png">
 <meta property="og:image" content="https://infinitesum.github.io/asset/posts/CleanShot%202024-04-17%20at%2000.30.25@2x.png">
-<meta property="og:image" content="https://infinitesum.github.io/asset/posts/CleanShot%202024-04-17%20at%2000.50.57@2x.png">
+<meta property="og:image" content="https://infinitesum.github.io/asset/posts/CleanShot%202024-04-17%20at%2002.58.29@2x.png">
 <meta property="og:image" content="https://infinitesum.github.io/asset/posts/CleanShot%202024-04-17%20at%2001.09.07@2x.png">
 <meta property="og:image" content="https://infinitesum.github.io/asset/posts/CleanShot%202024-04-17%20at%2001.21.07@2x.png">
 <meta property="og:image" content="https://infinitesum.github.io/asset/posts/CleanShot%202024-04-17%20at%2001.22.42@2x.png">
@@ -42,7 +42,7 @@
 <meta property="og:image" content="https://infinitesum.github.io/asset/posts/CleanShot%202024-04-17%20at%2002.13.48@2x.png">
 <meta property="og:image" content="https://infinitesum.github.io/asset/posts/CleanShot%202024-04-17%20at%2002.17.46@2x.png">
 <meta property="article:published_time" content="2024-04-16T13:36:00.000Z">
-<meta property="article:modified_time" content="2024-04-16T18:59:07.000Z">
+<meta property="article:modified_time" content="2024-04-16T18:59:59.000Z">
 <meta property="article:author" content="Summer">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
@@ -93,7 +93,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/">知识积累</a> <span class="sep"></span> <a class="cap breadcrumb-link" href="/categories/%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/%E5%BB%BA%E7%AB%99%E7%AC%94%E8%AE%B0/">建站笔记</a></div><div id="tag"> <span>&nbsp;标签：</span><a class="cap breadcrumb-link" href="/tags/Hexo/">Hexo</a>&nbsp;</div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-04-16T13:36:00.000Z">2024年4月16日</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-04-16T18:59:07.000Z">2024年4月17日</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-04-16T13:36:00.000Z">2024年4月16日</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-04-16T18:59:59.000Z">2024年4月17日</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -182,7 +182,7 @@
 <p></p>
 <h2 id="在文章页面添加标签显示"><a class="markdownIt-Anchor" href="#在文章页面添加标签显示"></a> 在文章页面添加标签显示</h2>
 <p>显示效果：</p>
-<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="../asset/posts/CleanShot%202024-04-17%20at%2000.50.57@2x.png" alt=""></p>
+<p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="../asset/posts/CleanShot%202024-04-17%20at%2002.58.29@2x.png" alt=""></p>
 <p>在 <code>layout/_partial/main/navbar/article_banner.ejs</code> 文件中，找到</p>
 <figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// 3.left.top: 面包屑导航</span><br><span class="line">  el += `&lt;div class="flex-row" id="breadcrumb"&gt;`</span><br><span class="line">    // 首页</span><br><span class="line">    el += `&lt;a class="cap breadcrumb" href="${url_for(config.root)}"&gt;${__("btn.home")}&lt;/a&gt;`</span><br><span class="line">    if (theme.wiki.tree[page.wiki]) {</span><br><span class="line">      el += partial('breadcrumb/wiki')</span><br><span class="line">    } else if (page.layout == 'post') {</span><br><span class="line">      el += partial('breadcrumb/blog')</span><br><span class="line">    } else {</span><br><span class="line">      el += partial('breadcrumb/page')</span><br><span class="line">    }</span><br><span class="line">  // end 3.left.top</span><br><span class="line">  el += `&lt;/div&gt;`</span><br></pre></td></tr></tbody></table></figure>
 <p>并在后面添加：</p>

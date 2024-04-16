@@ -42,7 +42,7 @@
 <meta property="og:image" content="https://infinitesum.github.io/asset/posts/CleanShot%202024-04-17%20at%2002.13.48@2x.png">
 <meta property="og:image" content="https://infinitesum.github.io/asset/posts/CleanShot%202024-04-17%20at%2002.17.46@2x.png">
 <meta property="article:published_time" content="2024-04-16T13:36:00.000Z">
-<meta property="article:modified_time" content="2024-04-16T19:38:21.000Z">
+<meta property="article:modified_time" content="2024-04-16T19:39:56.000Z">
 <meta property="article:author" content="Summer">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
@@ -93,7 +93,7 @@
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/">知识积累</a> <span class="sep"></span> <a class="cap breadcrumb-link" href="/categories/%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/%E5%BB%BA%E7%AB%99%E7%AC%94%E8%AE%B0/">建站笔记</a></div><div id="tag"> <span>&nbsp;标签：</span><a class="cap breadcrumb-link" href="/tags/Hexo/">Hexo</a>&nbsp;</div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-04-16T13:36:00.000Z">2024年4月16日</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-04-16T19:38:21.000Z">2024年4月17日</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-04-16T13:36:00.000Z">2024年4月16日</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-04-16T19:39:56.000Z">2024年4月17日</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -120,7 +120,7 @@
 <p>显示效果：</p>
 <div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="../asset/posts/CleanShot%202024-04-16%20at%2021.59.46@2x.png" alt="博客总文章和字数统计"></div><div class="image-meta"><span class="image-caption center">博客总文章和字数统计</span></div></div>
 <p>首先，安装 <code>hexo-wordcount</code> 插件：</p>
-<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-wordcount-fomal --save</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-wordcount --save</span><br></pre></td></tr></tbody></table></figure>
 <p>在 <code>themes/stellar/layout/_partial/main/footer.ejs</code> 中，找到以下部分：</p>
 <figure class="highlight javascript"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// footer</span></span><br><span class="line">  el += <span class="string">'&lt;div class="text"&gt;'</span></span><br><span class="line">  <span class="keyword">if</span> (content) {</span><br><span class="line">    el += <span class="title function_">markdown</span>(content)</span><br><span class="line">  }</span><br></pre></td></tr></tbody></table></figure>
 <p>在以上代码后面添加以下代码：</p>

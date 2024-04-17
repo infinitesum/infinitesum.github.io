@@ -171,3 +171,9 @@ table a:not([class]) {
   margin-right: auto;
   background: linear-gradient(0, var(--theme-link), var(--theme-link)) no-repeat center bottom / 100% 2px;
 }
+
+
+/* toc高亮样式 */
+.widget-wrapper.toc .toc a.toc-link.active {
+  background: var(--block-hover)
+}

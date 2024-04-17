@@ -5174,6 +5174,11 @@ details.toc[open] >div.body section .header+.doc_tree {
   font-weight: 500;
 /*--fsp: $fsp1*/
 }
+@media screen and (max-width: 500px) {
+  .widget-wrapper.toc .toc .toc-item {
+    --fsp: calc(17px - 1px);
+  }
+}
 .widget-wrapper.toc .toc .toc-item .toc-item {
   font-weight: 400;
   --fsp: calc(17px - 2px);

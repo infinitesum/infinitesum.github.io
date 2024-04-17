@@ -5773,6 +5773,11 @@ details.toc[open] >div.body section .header+.doc_tree {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 500px) {
+  .post-list .post-card .meta.cap {
+    margin: 0.2rem 0;
+  }
+}
 .post-list .post-card .meta.cap svg {
   height: 1em;
   width: auto;
@@ -5817,6 +5822,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   margin-left: -1rem;
   margin-top: -1rem;
   margin-right: -1rem;
+  margin-bottom: 15px;
   background: var(--block);
 }
 .post-list .post-card .post-cover:not(.lazy) {

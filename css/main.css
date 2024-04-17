@@ -5172,7 +5172,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 }
 .widget-wrapper.toc .toc .toc-item {
   font-weight: 500;
-  --fsp: calc(17px - 1px);
+/*--fsp: $fsp1*/
 }
 .widget-wrapper.toc .toc .toc-item .toc-item {
   font-weight: 400;

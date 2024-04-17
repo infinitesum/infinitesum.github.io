@@ -160,3 +160,14 @@
       fill: white;
   }
 }
+
+/* 文章内链接：链接不使用文本颜色，下划线半透明 */
+li:not([class]) a:not([class]),
+p:not([class]) a:not([class]),
+table a:not([class]) {
+  /*color: var(--theme-link);*/
+  padding-bottom: 3px; /* 增加底部padding，以适应下划线 */
+  padding-right: 1px;
+  margin-right: auto;
+  background: linear-gradient(0, var(--theme-link), var(--theme-link)) no-repeat center bottom / 100% 2px;
+}

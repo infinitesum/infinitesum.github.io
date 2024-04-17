@@ -133,7 +133,7 @@ show_runtime();
 <div class="linklist center" style="grid-template-columns:repeat(1,1fr);">
 <a class="link" title="随机文章" href="javascript:toRandomPost()"><div class="flex"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.iconify.design/ion:dice-outline.svg"/><span>随机文章</span></div></a></div></div></widget>
 
-<widget class="widget-wrapper timeline"><div class="widget-header dis-select"><span class="name">最新评论</span></div><div class="widget-body fs14"><div class="tag-plugin timeline ds-twikoo" api="https://summertwikoo.netlify.app/.netlify/functions/twikoo" hide="reply" limit="16"></div></div></widget>
+<widget class="widget-wrapper timeline"><div class="widget-header dis-select"><span class="name">最新评论</span></div><div class="widget-body fs14"><div class="tag-plugin timeline ds-twikoo" api="https://twikoo-vercel-blond.vercel.app/" hide="reply" limit="16"></div></div></widget>
 </div></aside><div class='float-panel blur'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
@@ -378,7 +378,7 @@ show_runtime();
             if (!path) {
                 path = decodeURI(window.location.pathname);
             }
-            twikoo.init(Object.assign({"js":"https://gcore.jsdelivr.net/npm/twikoo@1.6.32/dist/twikoo.all.min.js","envId":"https://summertwikoo.netlify.app/.netlify/functions/twikoo"}, {
+            twikoo.init(Object.assign({"js":"https://gcore.jsdelivr.net/npm/twikoo@1.6.32/dist/twikoo.all.min.js","envId":"https://twikoo-vercel-blond.vercel.app/"}, {
                 el: '#twikoo_container',
                 path: path,
             }));
@@ -536,4 +536,4 @@ show_runtime();
 <!-- inject -->
 
 </div></body></html>
-<script>var posts=["24 年 3 月小结/","Fallout/","Hexo Stellar 主题装修笔记/","S2-POI/","S3-POI/","S4-POI/","Stellar 主题中添加分类索引 Widget/","Warp-terminal/","betty/","black-mirror-roast/","first-blog/","hello-world/","black-mirror-s4/","how-to-make-notes-for-science-papers/","how-to-structure-science-paper/","iOS-auto-obtain-package-code/","the-life-i-have/","zotero-report-generator/","一个简易的助教课记录/","文献速递-2024-3/","现代生活的伪事件/","用Python批量修改 PDF 文件名/","经济学顶刊论文研读：Mapping the Venture Capital and Private Equity Research/","网飞版三体 3 Body Problem/","记 LSE-SUFE Joint Conference/","empirical/1-choosing-a-topic/","empirical/2-literature-reading/","empirical/3-literature-writing/","empirical/4-descriptive-stats/"];function toRandomPost(){ window.pjax ? pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]) : window.open('/'+posts[Math.floor(Math.random()*posts.length)], "_self"); };</script>
+<script>var posts=["24 年 3 月小结/","Fallout/","Hexo Stellar 主题装修笔记/","S2-POI/","S3-POI/","S4-POI/","Stellar 主题中添加分类索引 Widget/","Warp-terminal/","betty/","black-mirror-roast/","black-mirror-s4/","first-blog/","hello-world/","how-to-make-notes-for-science-papers/","how-to-structure-science-paper/","iOS-auto-obtain-package-code/","the-life-i-have/","zotero-report-generator/","一个简易的助教课记录/","现代生活的伪事件/","文献速递-2024-3/","用Python批量修改 PDF 文件名/","经济学顶刊论文研读：Mapping the Venture Capital and Private Equity Research/","网飞版三体 3 Body Problem/","记 LSE-SUFE Joint Conference/","empirical/1-choosing-a-topic/","empirical/2-literature-reading/","empirical/3-literature-writing/","empirical/4-descriptive-stats/"];function toRandomPost(){ window.pjax ? pjax.loadUrl('/'+posts[Math.floor(Math.random()*posts.length)]) : window.open('/'+posts[Math.floor(Math.random()*posts.length)], "_self"); };</script>

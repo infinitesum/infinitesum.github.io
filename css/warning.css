@@ -1,176 +1,176 @@
 .admonition {
-  font-size: 0.96em;
-  margin: 1.5625em 0;
-  padding: 0.6rem;
-  overflow: visible;
-  page-break-inside: avoid;
-  border-left: 0.3rem solid;
-  border-radius: 0.3rem;
-  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.05),
-    0 0 0.05rem rgba(0, 0, 0, 0.1);
-  line-height: 1.8;
-}
-.admonition > :last-child {
-  margin-bottom: 0 !important;
-}
-.admonition-title::before {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  width: 16px;
-  height: 16px;
-  border-radius: 100%;
-  content: " ";
-}
-p.admonition-title {
-  position: relative;
-  margin: -0.6rem -0.6rem 0.8em -0.6rem !important;
-  padding: 0.4rem 0.6rem 0.4rem 2.5rem;
-  font-weight: 700;
-  line-height: 2;
-}
-
-.admonition.note,
-.admonition.question,
-.admonition.success {
-  border-color: rgb(66, 185, 131);
-}
-.note > .admonition-title::before,
-.question > .admonition-title::before,
-.success > .admonition-title::before {
-  background-color: rgb(66, 185, 131);
-}
-.note > .admonition-title,
-.question > .admonition-title,
-.success > .admonition-title {
-  background-color: rgba(66, 185, 131, 0.4);
-}
-
-.admonition.info,
-.admonition.todo {
-  border-color: rgb(0, 184, 212);
-}
-.info > .admonition-title::before,
-.todo > .admonition-title::before {
-  background-color: rgb(0, 184, 212);
-}
-.info > .admonition-title,
-.todo > .admonition-title {
-  background-color: rgba(0, 184, 212, 0.4);
-}
-
-.admonition.warning,
-.admonition.attention,
-.admonition.caution {
-  border-color: rgb(255, 145, 0);
-}
-.warning > .admonition-title::before,
-.attention > .admonition-title::before,
-.caution > .admonition-title::before {
-  background-color: rgb(255, 145, 0);
-}
-.warning > .admonition-title,
-.attention > .admonition-title,
-.caution > .admonition-title {
-  background-color: rgba(255, 145, 0, 0.4);
-}
-
-.admonition.failure,
-.admonition.missing,
-.admonition.danger,
-.admonition.bug,
-.admonition.error {
-  border-color: rgb(255, 82, 82);
-}
-.failure > .admonition-title::before,
-.missing > .admonition-title::before,
-.danger > .admonition-title::before,
-.bug > .admonition-title::before,
-.error > .admonition-title::before {
-  background-color: rgb(255, 82, 82);
-}
-.failure > .admonition-title,
-.missing > .admonition-title,
-.danger > .admonition-title,
-.bug > .admonition-title,
-.error > .admonition-title {
-  background-color: rgba(255, 82, 82, 0.4);
-}
-
-.admonition.example {
-  border-color: rgb(144, 61, 204);
-}
-.example > .admonition-title::before {
-  background-color: rgb(144, 61, 204);
-}
-.example > .admonition-title {
-  background-color: rgba(144, 61, 204, 0.4);
-}
-
-.admonition.quote {
-  border-color: rgb(170, 170, 170);
-}
-.quote > .admonition-title::before {
-  background-color: rgb(170, 170, 170);
-}
-.quote > .admonition-title {
-  background-color: rgba(170, 170, 170, 0.4);
-}
-
-.admonition.tip,
-.admonition.abstract {
-  border-color: rgb(68, 138, 255);
-}
-.tip > .admonition-title::before,
-.abstract > .admonition-title::before {
-  background-color: rgb(68, 138, 255);
-}
-.tip > .admonition-title,
-.abstract > .admonition-title {
-  background-color: rgba(68, 138, 255, 0.4);
-}
-
-.admonition.memo,
-.admonition.sheet {
-  border-color: rgb(195, 162, 16);
-}
-.memo > .admonition-title::before,
-.sheet > .admonition-title::before {
-  background-color: rgb(195, 162, 16);
-}
-.memo > .admonition-title,
-.sheet > .admonition-title {
-  background-color: rgba(195, 162, 16, 0.4);
-}
-
-@media (prefers-color-scheme: light) {
-  .admonition {
-    background-color: rgb(238, 238, 238);
+    font-size: 0.96em;
+    margin: 1.5625em 0;
+    padding: 0.6rem;
+    overflow: visible;
+    page-break-inside: avoid;
+    border-left: 0.3rem solid;
+    border-radius: 0.3rem;
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.05),
+      0 0 0.05rem rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
   }
-
-  .admonition.test {
-    border-color: rgb(40, 55, 71);
+  .admonition > :last-child {
+    margin-bottom: 0 !important;
   }
-  .test > .admonition-title::before {
-    background-color: rgb(40, 55, 71);
+  .admonition-title::before {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    content: " ";
   }
-  .test > .admonition-title {
-    background-color: rgba(40, 55, 71, 0.4);
+  p.admonition-title {
+    position: relative;
+    margin: -0.6rem -0.6rem 0.8em -0.6rem !important;
+    padding: 0.4rem 0.6rem 0.4rem 2.5rem;
+    font-weight: 700;
+    line-height: 2;
   }
-}
-
-@media (prefers-color-scheme: dark) {
-  .admonition {
-    background-color: rgb(68, 68, 68);
+  
+  .admonition.note,
+  .admonition.question,
+  .admonition.success {
+    border-color: rgb(66, 185, 131);
   }
-
-  .admonition.test {
-    border-color: rgb(242, 243, 244);
+  .note > .admonition-title::before,
+  .question > .admonition-title::before,
+  .success > .admonition-title::before {
+    background-color: rgb(66, 185, 131);
   }
-  .test > .admonition-title::before {
-    background-color: rgb(242, 243, 244);
+  .note > .admonition-title,
+  .question > .admonition-title,
+  .success > .admonition-title {
+    background-color: rgba(66, 185, 131, 0.4);
   }
-  .test > .admonition-title {
-    background-color: rgba(242, 243, 244, 0.4);
+  
+  .admonition.info,
+  .admonition.todo {
+    border-color: rgb(0, 184, 212);
   }
-}
+  .info > .admonition-title::before,
+  .todo > .admonition-title::before {
+    background-color: rgb(0, 184, 212);
+  }
+  .info > .admonition-title,
+  .todo > .admonition-title {
+    background-color: rgba(0, 184, 212, 0.4);
+  }
+  
+  .admonition.warning,
+  .admonition.attention,
+  .admonition.caution {
+    border-color: rgb(255, 145, 0);
+  }
+  .warning > .admonition-title::before,
+  .attention > .admonition-title::before,
+  .caution > .admonition-title::before {
+    background-color: rgb(255, 145, 0);
+  }
+  .warning > .admonition-title,
+  .attention > .admonition-title,
+  .caution > .admonition-title {
+    background-color: rgba(255, 145, 0, 0.4);
+  }
+  
+  .admonition.failure,
+  .admonition.missing,
+  .admonition.danger,
+  .admonition.bug,
+  .admonition.error {
+    border-color: rgb(255, 82, 82);
+  }
+  .failure > .admonition-title::before,
+  .missing > .admonition-title::before,
+  .danger > .admonition-title::before,
+  .bug > .admonition-title::before,
+  .error > .admonition-title::before {
+    background-color: rgb(255, 82, 82);
+  }
+  .failure > .admonition-title,
+  .missing > .admonition-title,
+  .danger > .admonition-title,
+  .bug > .admonition-title,
+  .error > .admonition-title {
+    background-color: rgba(255, 82, 82, 0.4);
+  }
+  
+  .admonition.example {
+    border-color: rgb(144, 61, 204);
+  }
+  .example > .admonition-title::before {
+    background-color: rgb(144, 61, 204);
+  }
+  .example > .admonition-title {
+    background-color: rgba(144, 61, 204, 0.4);
+  }
+  
+  .admonition.quote {
+    border-color: rgb(170, 170, 170);
+  }
+  .quote > .admonition-title::before {
+    background-color: rgb(170, 170, 170);
+  }
+  .quote > .admonition-title {
+    background-color: rgba(170, 170, 170, 0.4);
+  }
+  
+  .admonition.tip,
+  .admonition.abstract {
+    border-color: rgb(68, 138, 255);
+  }
+  .tip > .admonition-title::before,
+  .abstract > .admonition-title::before {
+    background-color: rgb(68, 138, 255);
+  }
+  .tip > .admonition-title,
+  .abstract > .admonition-title {
+    background-color: rgba(68, 138, 255, 0.4);
+  }
+  
+  .admonition.memo,
+  .admonition.sheet {
+    border-color: rgb(195, 162, 16);
+  }
+  .memo > .admonition-title::before,
+  .sheet > .admonition-title::before {
+    background-color: rgb(195, 162, 16);
+  }
+  .memo > .admonition-title,
+  .sheet > .admonition-title {
+    background-color: rgba(195, 162, 16, 0.4);
+  }
+  
+  @media (prefers-color-scheme: light) {
+    .admonition {
+      background-color: rgb(238, 238, 238);
+    }
+  
+    .admonition.test {
+      border-color: rgb(40, 55, 71);
+    }
+    .test > .admonition-title::before {
+      background-color: rgb(40, 55, 71);
+    }
+    .test > .admonition-title {
+      background-color: rgba(40, 55, 71, 0.4);
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .admonition {
+      background-color: rgb(68, 68, 68);
+    }
+  
+    .admonition.test {
+      border-color: rgb(242, 243, 244);
+    }
+    .test > .admonition-title::before {
+      background-color: rgb(242, 243, 244);
+    }
+    .test > .admonition-title {
+      background-color: rgba(242, 243, 244, 0.4);
+    }
+  }

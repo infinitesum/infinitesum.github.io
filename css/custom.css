@@ -182,7 +182,7 @@ li:not([class]) a:not([class]),
 p:not([class]) a:not([class]),
 table a:not([class]) {
   padding-bottom: 0.1rem;
-  background: linear-gradient(0, var(--theme-link-opa), var(--theme-link-opa)) no-repeat center bottom / 100% 40%;
+  background: linear-gradient(0, var(--theme-link-opaq), var(--theme-link-opaq)) no-repeat center bottom / 100% 40%;
 }
 
 /* 选中文本：使用超链接高亮的背景色 */

@@ -195,3 +195,13 @@ table a:not([class]) {
 .widget-wrapper.toc .toc a.toc-link.active {
   background: var(--block-hover)
 }
+
+/*
+.md-text .highlight {
+  max-height: 400px; 
+  overflow: auto; 
+}
+*/
+
+
+

@@ -6466,6 +6466,9 @@ div.swiper-slide img {
 .swiper-button-next:after {
   transform: translateX(1px);
 }
+img[data-fancybox] {
+  cursor: zoom-in;
+}
 pre.mermaid {
   display: flex;
   align-items: center;

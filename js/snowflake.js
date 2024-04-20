@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const Config = {
-        snow: ['❄', '※', '❅', '❆', '❇', '❈', '❉', '❊', '❋'],
+        snow: ['❄', '※', '❅', '❆', '🎉', '❈', '❉', '❊', '❋'],
         color: '#d9e2e7', // 默认颜色
         speed: 10,
         dom: document.getElementsByTagName('body')[0],

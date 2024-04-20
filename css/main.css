@@ -5855,7 +5855,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 }
 .l_main .post-list .post-title {
   font-weight: 500;
-  margin: 0.8rem auto 0.5rem 0;
+  margin: 0.7rem auto 0.8rem 0;
   line-height: 1.2;
   font-size: calc(17px + 4px);
   border-bottom: none;

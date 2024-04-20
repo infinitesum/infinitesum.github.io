@@ -43,7 +43,7 @@
 
   
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/asset/favicon/apple-touch-icon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/asset/favicon/favicon-32x32.ico"><link rel="icon" type="image/png" sizes="16x16" href="/asset/favicon/favicon-16x16.ico"><link rel="shortcut icon" href="/asset/favicon/favicon.ico"><link rel="stylesheet" href="/css/custom.css?1"><link href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&display=swap" rel="stylesheet"><link rel='stylesheet' href='https://834832894.r.cdn36.com/chinesefonts3/packages/jxzk/dist/江西拙楷/result.css' /><link rel="stylesheet" href="/css/index_callout.css"><link rel="stylesheet" href="/css/tagcolor-switch.css"><script defer src="https://us.umami.is/script.js" data-website-id="6725a27f-2724-4298-b2cd-4b4fc5207672"></script><script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script><script async data-pjax src="/js/services/txmap.js"></script><script src="/js/changefont.js"></script><script src="/js/link-icon.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/asset/favicon/apple-touch-icon.ico"><link rel="icon" type="image/png" sizes="32x32" href="/asset/favicon/favicon-32x32.ico"><link rel="icon" type="image/png" sizes="16x16" href="/asset/favicon/favicon-16x16.ico"><link rel="shortcut icon" href="/asset/favicon/favicon.ico"><link rel="stylesheet" href="/css/custom.css?1"><link href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" rel="stylesheet"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@0;1&display=swap" rel="stylesheet"><link rel='stylesheet' href='https://834832894.r.cdn36.com/chinesefonts3/packages/jxzk/dist/江西拙楷/result.css' /><link rel="stylesheet" href="/css/index_callout.css"><link rel="stylesheet" href="/css/tagcolor-switch.css"><script defer src="https://us.umami.is/script.js" data-website-id="6725a27f-2724-4298-b2cd-4b4fc5207672"></script><script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script><script async data-pjax src="/js/services/txmap.js"></script><script src="/js/changefont.js"></script><script src="/js/link-icon.js"></script>
 </head>
 <body>
 
@@ -350,7 +350,7 @@ show_runtime();
 
 <script defer>
   window.addEventListener('DOMContentLoaded', (event) => {
-    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":"https://siteinfo.flyalready.cn/api/v1?url={href}"},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"twikoo":{"js":"/js/services/twikoo_new.js"},"welcome":{"js":"/js/services/txmap.js"}}`));
+    ctx.services = Object.assign({}, JSON.parse(`{"mdrender":{"js":"/js/services/mdrender.js"},"siteinfo":{"js":"/js/services/siteinfo.js","api":"https://siteinfo.flyalready.cn/api/v1?url={href}"},"ghinfo":{"js":"/js/services/ghinfo.js"},"sites":{"js":"/js/services/sites.js"},"friends":{"js":"/js/services/friends.js"},"timeline":{"js":"/js/services/timeline.js"},"fcircle":{"js":"/js/services/fcircle.js"},"weibo":{"js":"/js/services/weibo.js"},"memos":{"js":"/js/services/memos.js"},"twikoo":{"js":"/js/services/twikoo_new.js"}}`));
     for (let id of Object.keys(ctx.services)) {
       const js = ctx.services[id].js;
       if (id == 'siteinfo') {
@@ -414,37 +414,6 @@ show_runtime();
     window.lazyLoadInstance?.update();
   });
 </script><script>
-  ctx.fancybox = {
-    selector: `.timenode p>img`,
-    css: `https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.min.css`,
-    js: `https://cdn.bootcdn.net/ajax/libs/fancyapps-ui/5.0.22/fancybox/fancybox.umd.min.js`
-  };
-  var selector = '[data-fancybox]:not(.error)';
-  if (ctx.fancybox.selector) {
-    selector += `, ${ctx.fancybox.selector}`
-  }
-  var needFancybox = document.querySelectorAll(selector).length !== 0;
-  if (!needFancybox) {
-    const els = document.getElementsByClassName('ds-memos');
-    if (els != undefined && els.length > 0) {
-      needFancybox = true;
-    }
-  }
-  if (needFancybox) {
-    utils.css(ctx.fancybox.css);
-    utils.js(ctx.fancybox.js, { defer: true }).then(function () {
-      Fancybox.bind(selector, {
-        hideScrollbar: false,
-        Thumbs: {
-          autoStart: false,
-        },
-        caption: (fancybox, slide) => {
-          return slide.triggerEl.alt || null
-        }
-      });
-    })
-  }
-</script><script>
   window.addEventListener('DOMContentLoaded', (event) => {
     const swiper_api = document.getElementById('swiper-api');
     if (swiper_api != undefined) {
@@ -471,9 +440,6 @@ show_runtime();
   });
 </script>
 
-<link rel="stylesheet" href="https://gcore.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
-<script defer src="https://gcore.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
-<script defer src="https://gcore.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"onload="renderMathInElement(document.body);"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     window.codeElements = document.querySelectorAll('.code');

@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // 监听暗色模式变化
     const matchDarkMode = window.matchMedia('(prefers-color-scheme: dark)');
     function handleColorSchemeChange(e) {
-        Config.color = e.matches ? 'rgb(255, 255, 255)' : 'rgb(149, 141, 186)'; // 暗模式使用白色，亮模式使用淡蓝色
+        Config.color = e.matches ? 'rgb(255, 255, 255)' : 'rgb(149, 141, 186)'; // 暗色模式下为白色，否则为灰色
     }
     matchDarkMode.addListener(handleColorSchemeChange);
     handleColorSchemeChange(matchDarkMode); // 初始化颜色

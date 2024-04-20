@@ -79,6 +79,7 @@
     --block-border: #3d3d3e;
     --block-hover: #333234;
     --theme-link-opa: rgba(160,142,210,0.4);
+    --theme-link-opaq: rgba(160,142,210,0.4);
     --leftbar-bg: #3d3d3e;
     --alpha20: rgba(0,0,0,0.2);
     --alpha40: rgba(0,0,0,0.4);

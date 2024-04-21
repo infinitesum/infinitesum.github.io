@@ -8,6 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
         active: false  // 默认不下雪
     };
 
+    // 尝试从localStorage中获取下雪状态
+    const storedSnowActive = localStorage.getItem('snowActive');
+    if (storedSnowActive !== null) {
+        Config.active = storedSnowActive === 'true';
+    }
+
     if (!Config.dom) {
         throw Error('请获取存在的DOM');
     }
@@ -71,8 +77,10 @@ document.addEventListener('DOMContentLoaded', function() {
         clearInterval(snowInterval);
     }
 
-    document.getElementById('toggleButton').addEventListener('click', function() {
+    const toggleButton = document.getElementById('toggleButton');
+    toggleButton.addEventListener('click', function() {
         Config.active = !Config.active;
+        localStorage.setItem('snowActive', Config.active);  // 更新localStorage的状态
         if (Config.active) {
             startSnow();
             this.textContent = '停止下雪';
@@ -81,6 +89,12 @@ document.addEventListener('DOMContentLoaded', function() {
             this.textContent = 'Let it snow!';
         }
     });
+
+    // 根据localStorage中的状态可能需要立即开始下雪
+    if (Config.active) {
+        startSnow();
+        toggleButton.textContent = '停止下雪';
+    }
 
     Config.dom.appendChild($canvas);
 });

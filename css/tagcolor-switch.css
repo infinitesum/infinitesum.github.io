@@ -12,3 +12,12 @@
     }
   }
   
+  /* 按钮的样式 */
+#toggleButton {
+  background-color: var(--tag-bg-color) !important;
+  color: var(--tag-text-color) !important;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* 平滑过渡色彩变化 */
+}

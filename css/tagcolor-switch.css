@@ -14,6 +14,7 @@
   
   /* 按钮的样式 */
 #toggleButton {
+  font-family: 'IM Fell DW Pica'; 
   background-color: var(--tag-bg-color) !important;
   color: var(--tag-text-color) !important;
   border: none;

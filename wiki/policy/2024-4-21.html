@@ -207,8 +207,15 @@
 
 
 <footer class="page-footer footnote"><hr><div class="text"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/asset/posts/keyboard.png" alt="描述文字" style="float: right; width: 60px; margin-left: 20px;">
-<span id="jinrishici-sentence">正在加载今日诗词....</span>
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<text id="poem_sentence"></text><text id="poem_info"></text>
+<script type="text/javascript">
+jinrishici.load(function(result) {
+var sentence = document.querySelector("#poem_sentence")
+var info = document.querySelector("#poem_info")
+sentence.innerHTML = result.data.content
+info.innerHTML = '——' + result.data.origin.author + '《' + result.data.origin.title + '》'
+});</script>
 <p>© <script>document.write(new Date().getFullYear())</script>  <b>·</b>  开心地使用 <a target="_blank" rel="noopener" href="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.27.0">Stellar</a> 主题   ｜ <span id="runtime_span"></span></p>
 <script type="text/javascript">
 function show_runtime() {

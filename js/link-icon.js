@@ -7,7 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
     links.forEach(function(link) {
         console.log('Processing link:', link.href);
 
-        const parentClasses = ['tag-plugin.users-wrap', 'tag-plugin.sites-wrap', 'tag-plugin.ghcard', 'tag-plugin.link.dis-select', 'tag-plugin.colorful.note', 'social-wrap.dis-select'];
+        const parentClasses = ['tag-plugin.users-wrap', 'tag-plugin.sites-wrap', 'tag-plugin.ghcard', 'tag-plugin.link.dis-select',  'social-wrap.dis-select'];
+        // 'tag-plugin.colorful.note',
         let skip = false;
 
         parentClasses.forEach(pc => {

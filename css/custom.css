@@ -215,5 +215,5 @@ table a:not([class]) {
 .md-text img.dark-mode-invert {
   margin: 0;  /* 移除自动边距 */
   display: inline;
-  vertical-align: middle;
+  vertical-align: text-top;
 }

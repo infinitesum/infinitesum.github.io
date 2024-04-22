@@ -206,3 +206,12 @@ table a:not([class]) {
 
 
 
+@media (prefers-color-scheme: dark) {
+  .dark-mode-invert {
+      filter: invert(1);
+      } 
+}
+
+.md-text img.dark-mode-invert {
+  margin: 0;  /* 移除自动边距 */
+}

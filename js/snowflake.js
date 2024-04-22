@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         speed: 10, // 雪花从生成到落到最底端所经历的时间，单位是秒。数字越小落得越快
         dom: document.getElementsByTagName('body')[0], // 下雪的区域，可以保持不变，这样就是全屏下雪
         interval: 800, // 生成一片雪花的时间间隔，单位是毫秒
-        active: true  // 默认下雪
+        active: false  // 默认bu下雪
     };
 
     // 尝试从localStorage中获取下雪状态

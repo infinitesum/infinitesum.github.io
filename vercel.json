@@ -1,1 +1,1 @@
-{"rewrites":[{"source":"/wiki/:path*","destination":"/wiki/:path*.html"}]}
+{"rewrites":[{"source":"/wiki/:path*","destination":"/wiki/:path*.html"},{"source":"/notes/:path*","destination":"/notes/:path*.html"}]}

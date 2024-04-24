@@ -217,3 +217,32 @@ table a:not([class]) {
   display: inline;
   vertical-align: text-top;
 }
+
+.nav-item {
+  position: relative; /* 确保可以相对定位提示框 */
+  cursor: pointer;
+}
+
+.nav-item::before {
+  content: attr(title); /* 使用元素的 title 属性作为内容 */
+  position: absolute;
+  white-space: nowrap;
+  color: #ffffff;
+  background: #656565;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: block; /* 始终保持显示，但使用 opacity 控制可见性 */
+  transform: translateX(-50%); /* 将提示框向左移动自身宽度的50%，以居中 */
+  top: 100%; /* 将提示框放置在元素的底部 */
+  left: 50%; /* 开始于元素的中心位置 */
+  opacity: 0; /* 初始为透明，不可见 */
+  transition: opacity 0.2s ease-in-out; /* 仅对透明度应用过渡效果 */
+  pointer-events: none; /* 确保提示框不会影响鼠标事件 */
+  margin-top: 5px; /* 在元素下方留一点间隙 */
+  z-index: 9999; /* 确保提示在最上层显示 */
+}
+
+.nav-item:hover::before {
+  opacity: 1; /* 鼠标悬停时全不透明，完全可见 */
+}
+

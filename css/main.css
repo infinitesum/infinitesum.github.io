@@ -4758,6 +4758,8 @@ details.toc[open] >div.body section .header+.doc_tree {
   height: calc(100vh - 16px);
   border-radius: 16px;
   overflow: hidden;
+  overflow: clip;
+  overflow-clip-margin: 0.5px;
 }
 .l_left .header {
   margin: var(--gap-max) var(--gap-margin) 0;

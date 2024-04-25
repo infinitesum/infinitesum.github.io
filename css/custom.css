@@ -1,3 +1,18 @@
+/* 默认的浅色模式颜色 */
+:root {
+  --tag-bg-color: #F2EEFD;
+  --tag-text-color: #835EEC;
+}
+
+/* 暗黑模式下的颜色 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --tag-bg-color: #282433;
+    --tag-text-color: #A28BF2;
+  }
+}
+
+
 /* 设置文字内容 :nth-child(1)的作用是选择第几个 */
 .el-input.el-input--small.el-input-group.el-input-group--prepend:nth-child(1):before {
     content: '输入QQ号会自动获取昵称和头像🐧';
@@ -245,4 +260,15 @@ table a:not([class]) {
 .nav-item:hover::before {
   opacity: 1; /* 鼠标悬停时全不透明，完全可见 */
 }
+
+
+.highlightcode-meta {
+    background-color: var(--tag-bg-color)!important;
+    color: var(--tag-text-color)!important;
+  }
+
+
+.highlightcode-meta a[href] {
+    color: var(--theme-link)!important;
+  }
 

@@ -25,7 +25,7 @@
 <meta property="og:url" content="https://flyalready.cn/wiki/poi-comments/">
 <meta property="og:site_name" content="宇宙尽头的餐馆">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-04-26T09:22:27.227Z">
+<meta property="article:published_time" content="2024-04-26T17:29:04.282Z">
 <meta property="article:modified_time" content="2024-02-28T05:58:21.000Z">
 <meta property="article:author" content="Summer">
 <meta name="twitter:card" content="summary">
@@ -479,12 +479,13 @@ show_runtime();
           autoStart: false,
         },
         caption: (fancybox, slide) => {
-          return slide.triggerEl.alt || null
+          return slide.triggerEl.alt || slide.triggerEl.dataset.caption || null
         }
       });
     })
   }
-</script><script>
+</script>
+<script>
   window.addEventListener('DOMContentLoaded', (event) => {
     const swiper_api = document.getElementById('swiper-api');
     if (swiper_api != undefined) {

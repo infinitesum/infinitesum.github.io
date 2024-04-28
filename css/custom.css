@@ -268,3 +268,44 @@ table a:not([class]) {
 .related-posts .item .title {
     color: var(--text);
   }
+
+
+.logo__cursor {
+    -webkit-animation: cursor 1s infinite;
+    animation: cursor 1s infinite;
+    background: var(--text-banner);
+    border-radius: 1px;
+    display: inline-flex;
+    align-items: flex-end;
+    height: 1.22rem;
+    margin-left: 7px;
+    width: 10px
+}
+
+@-webkit-keyframes cursor {
+  0% {
+      opacity: 0
+  }
+
+  50% {
+      opacity: 1
+  }
+
+  to {
+      opacity: 0
+  }
+}
+
+@keyframes cursor {
+  0% {
+      opacity: 0
+  }
+
+  50% {
+      opacity: 1
+  }
+
+  to {
+      opacity: 0
+  }
+}

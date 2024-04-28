@@ -1,16 +1,8 @@
-/* 默认的浅色模式颜色 */
-:root {
-  --tag-bg-color: #F2EEFD;
-  --tag-text-color: #835EEC;
-}
 
-/* 暗黑模式下的颜色 */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --tag-bg-color: #282433;
-    --tag-text-color: #A28BF2;
-  }
-}
+@import './tagcolor-switch.css';
+
+
+
 
 
 /* 设置文字内容 :nth-child(1)的作用是选择第几个 */
@@ -272,3 +264,7 @@ table a:not([class]) {
     color: var(--theme-link)!important;
   }
 
+/*推荐文章标题颜色调整为白*/
+.related-posts .item .title {
+    color: var(--text);
+  }

@@ -6,7 +6,7 @@
   <link href="https://flyalready.cn/atom.xml" rel="self"/>
   
   <link href="https://flyalready.cn/"/>
-  <updated>2024-04-28T12:02:03.000Z</updated>
+  <updated>2024-04-28T12:08:13.000Z</updated>
   <id>https://flyalready.cn/</id>
   
   <author>
@@ -21,21 +21,23 @@
     <link href="https://flyalready.cn/Stellar%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0%E8%A7%A3%E5%86%B3%E4%B8%8E%E4%B8%8A%E6%B8%B8fork%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%86%B2%E7%AA%81/"/>
     <id>https://flyalready.cn/Stellar%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0%E8%A7%A3%E5%86%B3%E4%B8%8E%E4%B8%8A%E6%B8%B8fork%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%86%B2%E7%AA%81/</id>
     <published>2024-04-28T11:50:00.000Z</published>
-    <updated>2024-04-28T12:02:03.000Z</updated>
+    <updated>2024-04-28T12:08:13.000Z</updated>
     
-    <content type="html"><![CDATA[<p>今天更新主题文件的时候发现又出现了冲突，择日不如撞日索性学习一下如何用编辑器解决 fork 项目的合并冲突。</p><h2 id="git解决与上游fork项目的冲突"><a class="markdownIt-Anchor" href="#git解决与上游fork项目的冲突"></a> Git解决与上游fork项目的冲突</h2><p>首先把项目下载到本地，用 vs code 打开。</p><h3 id="git-add-上游项目并-git-merge-检查冲突"><a class="markdownIt-Anchor" href="#git-add-上游项目并-git-merge-检查冲突"></a> git add 上游项目，并 git merge 检查冲突</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">git remote add upstream https://github.com/xxx/xxx.git</span><br><span class="line"></span><br><span class="line"># 查看上游和你的项目</span><br><span class="line">git remote -v</span><br><span class="line"></span><br><span class="line"># 拉取上游仓库的更改</span><br><span class="line">git fetch upstream</span><br><span class="line"></span><br><span class="line"># 检查你的项目的默认分支</span><br><span class="line">git checkout main</span><br><span class="line"></span><br><span class="line"># 合并上游的更改</span><br><span class="line">git merge upstream/main</span><br></pre></td></tr></table></figure><h3 id="解决冲突"><a class="markdownIt-Anchor" href="#解决冲突"></a> 解决冲突</h3><p>这个时候就会出现“CONFLICT (content): Merge conflict in”，用 VSCode 等编辑器打开那个文件修改就行。</p><h3 id="提交"><a class="markdownIt-Anchor" href="#提交"></a> 提交</h3><p>最后再提交更改即可，完毕后 fork 项目就已经是最新啦（嗯，我还是喜欢用界面操作，代码对我来说太麻烦啦，写在这里供自己参考）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add &lt;your file name&gt;</span><br><span class="line">git commit -m &quot;合并冲突&quot;</span><br><span class="line">git push</span><br></pre></td></tr></table></figure><p>参考：</p><p><a href="https://www.tyzhao.me/article/gitconflict">Git解决与上游fork项目的冲突</a></p><h2 id="检查主题文件"><a class="markdownIt-Anchor" href="#检查主题文件"></a> 检查主题文件</h2><p>不喜欢暗黑模式下手机端页面背景纯黑，把这两行代码删掉了</p><figure class="highlight styl"><figcaption><span>themes/stellar/source/css/_defines/theme.styl</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width</span>: $device-mobile-max)</span><br><span class="line">  --site-bg: black</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p>今天更新主题文件的时候发现又无法直接无脑 update fork 了，择日不如撞日索性学习一下如何用编辑器解决 fork 项目的合并冲突。</p><h2 id="git解决与上游fork项目的冲突"><a class="markdownIt-Anchor" href="#git解决与上游fork项目的冲突"></a> Git解决与上游fork项目的冲突</h2><p>首先把项目下载到本地，用 vs code 打开。</p><h3 id="git-add-上游项目并-git-merge-检查冲突"><a class="markdownIt-Anchor" href="#git-add-上游项目并-git-merge-检查冲突"></a> git add 上游项目，并 git merge 检查冲突</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">git remote add upstream https://github.com/xxx/xxx.git</span><br><span class="line"></span><br><span class="line"># 查看上游和你的项目</span><br><span class="line">git remote -v</span><br><span class="line"></span><br><span class="line"># 拉取上游仓库的更改</span><br><span class="line">git fetch upstream</span><br><span class="line"></span><br><span class="line"># 检查你的项目的默认分支</span><br><span class="line">git checkout main</span><br><span class="line"></span><br><span class="line"># 合并上游的更改</span><br><span class="line">git merge upstream/main</span><br></pre></td></tr></table></figure><h3 id="解决冲突"><a class="markdownIt-Anchor" href="#解决冲突"></a> 解决冲突</h3><p>这个时候就会出现“CONFLICT (content): Merge conflict in”，用 VSCode 等编辑器打开那个文件修改就行。</p><h3 id="提交"><a class="markdownIt-Anchor" href="#提交"></a> 提交</h3><p>最后再提交更改即可，完毕后 fork 项目就已经是最新啦（嗯，我还是喜欢用界面操作，代码对我来说太麻烦啦，写在这里供自己参考）</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add &lt;your file name&gt;</span><br><span class="line">git commit -m &quot;合并冲突&quot;</span><br><span class="line">git push</span><br></pre></td></tr></table></figure><p>参考：</p><p><a href="https://www.tyzhao.me/article/gitconflict">Git解决与上游fork项目的冲突</a></p><h2 id="检查主题文件"><a class="markdownIt-Anchor" href="#检查主题文件"></a> 检查主题文件</h2><p>不喜欢暗黑模式下手机端页面背景纯黑，把这两行代码删掉了</p><figure class="highlight styl"><figcaption><span>themes/stellar/source/css/_defines/theme.styl</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width</span>: $device-mobile-max)</span><br><span class="line">  --site-bg: black</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;今天更新主题文件的时候发现又出现了</summary>
-        
-      
+    <summary type="html">今天更新主题文件的时候发现又无法直接无脑 update fork 了，择日不如撞日索性学习一下如何用编辑器解决 fork 项目的合并冲突。</summary>
     
     
     
+    <category term="知识积累" scheme="https://flyalready.cn/categories/%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/"/>
+    
+    <category term="建站笔记" scheme="https://flyalready.cn/categories/%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/%E5%BB%BA%E7%AB%99%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="Hexo" scheme="https://flyalready.cn/tags/Hexo/"/>
+    
+    <category term="GitHub" scheme="https://flyalready.cn/tags/GitHub/"/>
     
   </entry>
   

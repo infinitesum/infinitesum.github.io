@@ -20,21 +20,23 @@
   <title>Stellar 主题更新解决与上游 fork 项目的冲突 - 宇宙尽头的餐馆</title>
 
   
-    <meta name="description" content="今天更新主题文件的时候发现又出现了冲突，择日不如撞日索性学习一下如何用编辑器解决 fork 项目的合并冲突。  Git解决与上游fork项目的冲突 首先把项目下载到本地，用 vs code 打开。  git add 上游项目，并 git merge 检查冲突 12345678910111213git remote add upstream https:&#x2F;&#x2F;github.com&#x2F;xxx&#x2F;xxx.gi">
+    <meta name="description" content="今天更新主题文件的时候发现又无法直接无脑 update fork 了，择日不如撞日索性学习一下如何用编辑器解决 fork 项目的合并冲突。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Stellar 主题更新解决与上游 fork 项目的冲突">
 <meta property="og:url" content="https://flyalready.cn/Stellar%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0%E8%A7%A3%E5%86%B3%E4%B8%8E%E4%B8%8A%E6%B8%B8fork%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%86%B2%E7%AA%81/">
 <meta property="og:site_name" content="宇宙尽头的餐馆">
-<meta property="og:description" content="今天更新主题文件的时候发现又出现了冲突，择日不如撞日索性学习一下如何用编辑器解决 fork 项目的合并冲突。  Git解决与上游fork项目的冲突 首先把项目下载到本地，用 vs code 打开。  git add 上游项目，并 git merge 检查冲突 12345678910111213git remote add upstream https:&#x2F;&#x2F;github.com&#x2F;xxx&#x2F;xxx.gi">
+<meta property="og:description" content="今天更新主题文件的时候发现又无法直接无脑 update fork 了，择日不如撞日索性学习一下如何用编辑器解决 fork 项目的合并冲突。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-04-28T11:50:00.000Z">
-<meta property="article:modified_time" content="2024-04-28T12:02:03.000Z">
+<meta property="article:modified_time" content="2024-04-28T12:08:13.000Z">
 <meta property="article:author" content="Summer">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="GitHub">
 <meta name="twitter:card" content="summary">
   
   
   
-  
+  <meta name="keywords" content="Hexo,GitHub">
 
   <!-- feed -->
   
@@ -77,8 +79,8 @@
 <div class="article banner top">
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
-<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-04-28T11:50:00.000Z">2024年4月28日</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-04-28T12:02:03.000Z">2024年4月28日</time></span></div></div></div>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/">知识积累</a> <span class="sep"></span> <a class="cap breadcrumb-link" href="/categories/%E7%9F%A5%E8%AF%86%E7%A7%AF%E7%B4%AF/%E5%BB%BA%E7%AB%99%E7%AC%94%E8%AE%B0/">建站笔记</a></div><div id="tag"> <span>&nbsp标签：</span><a class="cap breadcrumb-link" href="/tags/GitHub/">GitHub</a>&nbsp; <a class="cap breadcrumb-link" href="/tags/Hexo/">Hexo</a>&nbsp</div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-04-28T11:50:00.000Z">2024年4月28日</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-04-28T12:08:13.000Z">2024年4月28日</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -89,7 +91,7 @@
     </div>
     
   </div>
-  </div><article class="md-text content"><p>今天更新主题文件的时候发现又出现了冲突，择日不如撞日索性学习一下如何用编辑器解决 fork 项目的合并冲突。</p>
+  </div><article class="md-text content"><p>今天更新主题文件的时候发现又无法直接无脑 update fork 了，择日不如撞日索性学习一下如何用编辑器解决 fork 项目的合并冲突。</p>
 <h2 id="git解决与上游fork项目的冲突"><a class="markdownIt-Anchor" href="#git解决与上游fork项目的冲突"></a> Git解决与上游fork项目的冲突</h2>
 <p>首先把项目下载到本地，用 vs code 打开。</p>
 <h3 id="git-add-上游项目并-git-merge-检查冲突"><a class="markdownIt-Anchor" href="#git-add-上游项目并-git-merge-检查冲突"></a> git add 上游项目，并 git merge 检查冲突</h3>
@@ -116,10 +118,7 @@
       <div class="header"><span>分享文章</span></div>
       <div class="body">
         <div class="link"><input class="copy-area" readonly="true" id="copy-link" value="https://flyalready.cn/Stellar%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0%E8%A7%A3%E5%86%B3%E4%B8%8E%E4%B8%8A%E6%B8%B8fork%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%86%B2%E7%AA%81/" /></div>
-        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://flyalready.cn/Stellar%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0%E8%A7%A3%E5%86%B3%E4%B8%8E%E4%B8%8A%E6%B8%B8fork%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%86%B2%E7%AA%81/&title=Stellar 主题更新解决与上游 fork 项目的冲突 - 宇宙尽头的餐馆&summary=今天更新主题文件的时候发现又出现了冲突，择日不如撞日索性学习一下如何用编辑器解决 fork 项目的合并冲突。
- Git解决与上游fork项目的冲突
-首先把项目下载到本地，用 vs code 打开。
- git add 上游项目，并 gi..."><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=Stellar 主题更新解决与上游 fork 项目的冲突 - 宇宙尽头的餐馆&amp;body=https://flyalready.cn/Stellar%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0%E8%A7%A3%E5%86%B3%E4%B8%8E%E4%B8%8A%E6%B8%B8fork%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%86%B2%E7%AA%81/"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
+        <div class="social-wrap dis-select"><a class="social share-item wechat" onclick="util.toggle(&quot;qrcode-wechat&quot)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/b32ef3da1162a.svg" /></a><a class="social share-item weibo" target="_blank" rel="external nofollow noopener noreferrer" href="https://service.weibo.com/share/share.php?url=https://flyalready.cn/Stellar%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0%E8%A7%A3%E5%86%B3%E4%B8%8E%E4%B8%8A%E6%B8%B8fork%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%86%B2%E7%AA%81/&title=Stellar 主题更新解决与上游 fork 项目的冲突 - 宇宙尽头的餐馆&summary=今天更新主题文件的时候发现又无法直接无脑 update fork 了，择日不如撞日索性学习一下如何用编辑器解决 fork 项目的合并冲突。"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/80c07e4dbb303.svg" /></a><a class="social share-item email" href="mailto:?subject=Stellar 主题更新解决与上游 fork 项目的冲突 - 宇宙尽头的餐馆&amp;body=https://flyalready.cn/Stellar%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0%E8%A7%A3%E5%86%B3%E4%B8%8E%E4%B8%8A%E6%B8%B8fork%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%86%B2%E7%AA%81/"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/a1b00e20f425d.svg" /></a><a class="social share-item link" onclick="util.copy(&quot;copy-link&quot;, &quot;复制成功&quot;)"><img class="lazy"  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/social/8411ed322ced6.svg" /></a></div>
         
         <div class="qrcode" id="qrcode-wechat" style="opacity:0;height:0">
           <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://api.qrserver.com/v1/create-qr-code/?size=256x256&data=https://flyalready.cn/Stellar%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0%E8%A7%A3%E5%86%B3%E4%B8%8E%E4%B8%8A%E6%B8%B8fork%E9%A1%B9%E7%9B%AE%E7%9A%84%E5%86%B2%E7%AA%81/"/>
@@ -136,7 +135,7 @@
       <div class='title cap theme'>您可能感兴趣的文章</div>
     </section>
     <section class='body'>
-    <div class="related-posts"><a class="item" href="/24 年 3 月小结/" title="24 年 3 月小结"><span class="title">24 年 3 月小结</span><span class="excerpt">一个迟来的 3 月小结。</span></a><a class="item" href="/Fallout/" title="Fallout (Acoustic) - Chris James 特调版自扒吉他谱"><span class="title">Fallout (Acoustic) - Chris James 特调版自扒吉他谱</span></a></div></section></div>
+    <div class="related-posts"><a class="item" href="/Hexo Stellar 主题装修笔记/" title="Hexo Stellar 主题装修笔记"><span class="title">Hexo Stellar 主题装修笔记</span><span class="excerpt">众所周知，装修是无止境的。</span></a><a class="item" href="/Stellar 主题中添加分类索引 Widget/" title="Stellar 主题中添加分类索引 Widget"><span class="title">Stellar 主题中添加分类索引 Widget</span><span class="excerpt">趁我还没忘记赶紧记录一下。</span></a><a class="item" href="/first-blog/" title="如何在 Hexo 博客文章中实现文档间跳转"><span class="title">如何在 Hexo 博客文章中实现文档间跳转</span><span class="excerpt">本文旨在介绍如何在 Hexo 博客文章中使用Markdown语法或Hexo特有的标签插件来实现文档间的跳转。</span></a><a class="item" href="/hello-world/" title="Hello World"><span class="title">Hello World</span></a></div></section></div>
 
 
   <div class="related-wrap md-text" id="comments">

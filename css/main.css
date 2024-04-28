@@ -65,6 +65,7 @@
   --text-p4: #4d4d4d;
   --text-meta: #666;
   --text-code: #14181f;
+  --theme-link-opaq: rgba(160,142,210,0.2);
 }
 :root[data-theme="dark"] {
   --site-bg: #1f1f1f;
@@ -86,11 +87,7 @@
   --text-p4: #b8b8b8;
   --text-meta: #a6a6a6;
   --text-code: #fff;
-}
-@media screen and (max-width: 667px) {
-  :root[data-theme="dark"] {
-    --site-bg: #000;
-  }
+  --theme-link-opaq: rgba(160,142,210,0.4);
 }
 @media (prefers-color-scheme: light) {
   :root:not([data-theme]) {
@@ -113,6 +110,7 @@
     --text-p4: #4d4d4d;
     --text-meta: #666;
     --text-code: #14181f;
+    --theme-link-opaq: rgba(160,142,210,0.2);
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -136,11 +134,7 @@
     --text-p4: #b8b8b8;
     --text-meta: #a6a6a6;
     --text-code: #fff;
-  }
-}
-@media screen and (prefers-color-scheme: dark) and (max-width: 667px) {
-  :root:not([data-theme]) {
-    --site-bg: #000;
+    --theme-link-opaq: rgba(160,142,210,0.4);
   }
 }
 .admonition {

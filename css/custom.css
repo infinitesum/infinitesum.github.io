@@ -88,12 +88,8 @@
     /*margin: 10px;
     background-color: #f2f2f2; /* Light grey background, change as needed */
     font-family: inherit; /* Inherits the font-family from parent container */
-    color: #835EEC;
-    background-color: #F2EEFD;
-    @media (prefers-color-scheme: dark) {
-      color: #A28BF2;
-      background-color: #282433;
-    }
+    color: var(--tag-text-color);
+    background-color: var(--tag-bg-color);
     text-align: center;
     cursor: pointer;
     /*border: 2px solid #ccc; /* Grey border */
@@ -158,14 +154,11 @@
 /* 设置图标颜色 */
 /* 白天模式，默认填充色为黑色 */
 .theme-icon {
-  fill: black;
+  fill: var(--text);
 }
 
-/* 暗黑模式，填充色为白色 */
-@media (prefers-color-scheme: dark) {
-  .theme-icon {
-      fill: white;
-  }
+.social-wrap .social img {
+  fill: var(--text);
 }
 
 /* 文章内链接：链接不使用文本颜色，下划线半透明 */

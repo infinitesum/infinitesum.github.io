@@ -7308,6 +7308,7 @@ text {
   font-size: inherit;
   color: var(--text-p1);
   background: var(--block);
+  font-family: auto;
 }
 .twikoo .tk-comments .el-input__inner {
   background: var(--block) !important;

@@ -17,7 +17,7 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f9fafb">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="var(--site-bg)">
   
-  <title>标签：论文 - 宇宙尽头的餐馆</title>
+  <title>星标：论文 - 宇宙尽头的餐馆</title>
 
   
     <meta property="og:type" content="website">
@@ -77,7 +77,7 @@
 
 
 
-<div class="navbar top"><nav class="post"><a href="/">光年新讯</a><a href="/categories">分类</a><a class="active" href="/tags">标签：论文</a><a href="/topic">专栏</a><a href="/archives">归档</a><a href="/wiki/">银河展厅</a></nav></div>
+<div class="navbar top"><nav class="post"><a href="/">光年新讯</a><a href="/categories">星域</a><a class="active" href="/tags">星标：论文</a><a href="/topic">星际特派</a><a href="/archives">归档</a><a href="/wiki/">银河展厅</a></nav></div>
 <div class="post-list post"><a class="post-card post" href="/empirical/4-descriptive-stats/">
 <article class="md-text"><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2024-03-01T15:14:00.000Z">2024年3月1日 </time><span class="post-count">&nbsp;1633 字</span></span></div><h2 class="post-title">浅谈实证研究：第四期 描述性统计</h2><div class="excerpt"><p> 描述统计的重要性与时机
 必要性：几乎所有的实证研究都需要进行描述性统计分析，除非研究完全基于理论模型推导。
@@ -137,7 +137,8 @@ show_runtime();
 </script> 
 <span class="totalcount">收集了 32 颗星星 ✧</span><span class="post-count"> 共 7w 颗星尘，</span>&emsp;<button id="toggleButton" style="background-color: #f0f0f0; border: none; border-radius: 5px; cursor: pointer; ">Let it snow!</button><script src="/js/snowflake.js"></script></div></footer><script>
     document.addEventListener("DOMContentLoaded", function() {
-      var countSpan = document.querySelector('.post-count');
+      var footer = document.querySelector('.page-footer'); // 确保只获取footer内的元素
+      var countSpan = footer.querySelector('.post-count');
       var words = countSpan.innerText.match(/(\d+(\.\d+)?)([kKwW])?/);
       var numWords = 0;
       if (words[3] === 'w' || words[3] === 'W') {
@@ -208,7 +209,7 @@ show_runtime();
     });
   </script>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-<div class="widgets"><widget class="widget-wrapper"><div class="widget-header dis-select"><span class="name">🗂️ 分类索引</span></div>
+<div class="widgets"><widget class="widget-wrapper"><div class="widget-header dis-select"><span class="name">🗂️ 星域</span></div>
 
   <div class='post-list categories-widget'>
     <article class='' id='cats'>
@@ -542,7 +543,7 @@ show_runtime();
     const messages = {
       light: `切换到浅色模式`,
       dark: `切换到深色模式`,
-      auto: `切换到跟随系统配色`,
+      auto: `跟随星系色彩`,
     }
     hud?.toast?.(messages[newTheme])
   }

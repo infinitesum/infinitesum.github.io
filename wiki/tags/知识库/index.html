@@ -71,7 +71,7 @@
 
 
 
-<div class="navbar top"><nav class="wiki"><a href="/wiki">文档库</a></a><a href="/wiki/tags/%E8%A7%82%E5%BD%B1%E7%AC%94%E8%AE%B0/">观影笔记</a></a><a href="/wiki/tags/%E6%96%B0%E9%97%BB/">新闻</a></a><a href="/">返回主页</a></nav></div>
+<div class="navbar top"><nav class="wiki"><a href="/wiki">银河展厅</a></a><a href="/wiki/tags/%E8%A7%82%E5%BD%B1%E7%AC%94%E8%AE%B0/">观影笔记</a></a><a href="/wiki/tags/%E6%96%B0%E9%97%BB/">新闻</a></a><a href="/">返回超导中心</a></nav></div>
 
 <footer class="page-footer footnote"><hr><div class="text"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/asset/posts/keyboard.png" alt="描述文字" style="float: right; width: 60px; margin-left: 20px;">
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
@@ -104,7 +104,8 @@ show_runtime();
 </script> 
 <span class="totalcount">收集了 32 颗星星 ✧</span><span class="post-count"> 共 7w 颗星尘，</span>&emsp;<button id="toggleButton" style="background-color: #f0f0f0; border: none; border-radius: 5px; cursor: pointer; ">Let it snow!</button><script src="/js/snowflake.js"></script></div></footer><script>
     document.addEventListener("DOMContentLoaded", function() {
-      var countSpan = document.querySelector('.post-count');
+      var footer = document.querySelector('.page-footer'); // 确保只获取footer内的元素
+      var countSpan = footer.querySelector('.post-count');
       var words = countSpan.innerText.match(/(\d+(\.\d+)?)([kKwW])?/);
       var numWords = 0;
       if (words[3] === 'w' || words[3] === 'W') {
@@ -457,7 +458,7 @@ show_runtime();
     const messages = {
       light: `切换到浅色模式`,
       dark: `切换到深色模式`,
-      auto: `切换到跟随系统配色`,
+      auto: `跟随星系色彩`,
     }
     hud?.toast?.(messages[newTheme])
   }

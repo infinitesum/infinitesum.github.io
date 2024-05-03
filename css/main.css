@@ -6221,7 +6221,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   margin-right: 0;
 }
 .post-list .post-card .meta.cap >span+span {
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 }
 .post-list .post-card .meta.cap span.pin img {
   object-fit: contain;

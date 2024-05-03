@@ -87,7 +87,7 @@
   <span class="sep"></span>
   <a class="cap breadcrumb" href="/about/books/">This is my book title</a>
   </div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-05-03T04:06:56.977Z">2024年5月3日</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-05-03T04:06:56.978Z">2024年5月3日</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-05-03T09:43:46.616Z">2024年5月3日</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-05-03T09:43:46.616Z">2024年5月3日</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -388,7 +388,78 @@ function show_runtime() {
 }
 show_runtime();
 </script> 
-<span class="post-count">收集了 6.8w 颗星尘 ✧</span><span class="totalcount"> 共 31 颗星星</span>&emsp;<button id="toggleButton" style="background-color: #f0f0f0; border: none; border-radius: 5px; cursor: pointer; ">Let it snow!</button><script src="/js/snowflake.js"></script></div></footer>
+<span class="totalcount">收集了 31 颗星星 ✧</span><span class="post-count"> 共 6.8w 颗星尘，</span>&emsp;<button id="toggleButton" style="background-color: #f0f0f0; border: none; border-radius: 5px; cursor: pointer; ">Let it snow!</button><script src="/js/snowflake.js"></script></div></footer><script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var countSpan = document.querySelector('.post-count');
+      var words = countSpan.innerText.match(/(\d+(\.\d+)?)([kKwW])?/);
+      var numWords = 0;
+      if (words[3] === 'w' || words[3] === 'W') {
+        numWords = parseFloat(words[1]) * 10000; // Convert 'w' to a full number
+      } else if (words[3] === 'k' || words[3] === 'K') {
+        numWords = parseFloat(words[1]) * 1000; // Convert 'k' to a full number
+      } else {
+        numWords = parseInt(words[1], 10); // Directly parse numbers without letters
+      }
+      var message = document.createElement('span');
+      message.className = 'post-count'; // Assign class
+      if (numWords < 50000) {
+        message.innerText = '还在努力更新中.. 加油！加油啦！';
+      } else if (numWords < 70000) {
+        message.innerText = '好像写完一本埃克苏佩里 的 《小王子》 了啊';
+      } else if (numWords < 90000) {
+        message.innerText = '好像写完一本 鲁迅 的 《呐喊》 了啊';
+      } else if (numWords < 100000) {
+        message.innerText = '好像写完一本 林海音 的 《城南旧事》 了啊';
+      } else if (numWords < 110000) {
+        message.innerText = '好像写完一本 马克·吐温 的 《王子与乞丐》了！ 了啊';
+      } else if (numWords < 120000) {
+        message.innerText = '好像写完一本 鲁迅 的 《彷徨》 了啊';
+      } else if (numWords < 130000) {
+        message.innerText = '好像写完一本 余华 的 《活着》 了啊';
+      } else if (numWords < 140000) {
+        message.innerText = '好像写完一本 曹禺 的 《雷雨》 了啊';
+      } else if (numWords < 150000) {
+        message.innerText = '好像写完一本 史铁生 的 《宿命的写作》 了啊';
+      } else if (numWords < 160000) {
+        message.innerText = '好像写完一本 伯内特 的 《秘密花园》 了啊';
+      } else if (numWords < 170000) {
+        message.innerText = '好像写完一本 曹禺 的 《日出》 了啊';
+      } else if (numWords < 180000) {
+        message.innerText = '好像写完一本 马克·吐温 的 《汤姆·索亚历险记》 了啊';
+      } else if (numWords < 190000) {
+        message.innerText = '好像写完一本 沈从文 的 《边城》 了啊';
+      } else if (numWords < 200000) {
+        message.innerText = '好像写完一本 亚米契斯 的 《爱的教育》 了啊';
+      } else if (numWords < 210000) {
+        message.innerText = '好像写完一本 巴金 的 《寒夜》 了啊';
+      } else if (numWords < 220000) {
+        message.innerText = '好像写完一本 东野圭吾 的 《解忧杂货店》 了啊';
+      } else if (numWords < 230000) {
+        message.innerText = '好像写完一本 莫泊桑 的 《一生》 了啊';
+      } else if (numWords < 240000) {
+        message.innerText = '好像写完一本 简·奥斯汀 的 《傲慢与偏见》 了啊';
+      } else if (numWords < 280000) {
+        message.innerText = '好像写完一本 钱钟书 的 《围城》 了啊';
+      } else if (numWords < 290000) {
+        message.innerText = '好像写完一本 张炜 的 《古船》 了啊';
+      } else if (numWords < 300000) {
+        message.innerText = '好像写完一本 乔治·奥威尔 的 《1984》 了啊';
+      } else if (numWords < 310000) {
+        message.innerText = '好像写完一本 茅盾 的 《子夜》 了啊';
+      } else if (numWords < 340000) {
+        message.innerText = '好像写完一本 艾米莉·勃朗特 的 《呼啸山庄》 了啊';
+      } else if (numWords < 350000) {
+        message.innerText = '好像写完一本 雨果 的 《巴黎圣母院》 了啊';
+      } else if (numWords < 360000) {
+        message.innerText = '好像写完一本 东野圭吾 的 《白夜行》 了啊';
+      } else if (numWords < 360001) {
+        message.innerText = '好像写完一本我国著名的 四大名著 了！！！';
+      } else {
+        message.innerText = '还在努力更新中.. 加油！加油啦！';
+      }
+      countSpan.parentNode.insertBefore(message, countSpan.nextSibling);
+    });
+  </script>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
 <div class="widgets">
 <widget class="widget-wrapper markdown"><div class="widget-header dis-select"><span class="name">🎉 抓到你啦</span></div><div class="widget-body fs14"><p><span id="welcome-info" style="font-family: LXGW WenKai Screen;"></span></p>

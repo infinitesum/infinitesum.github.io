@@ -56,7 +56,6 @@
   --leftbar-bg: #e5e5e6;
   --alpha20: rgba(255,255,255,0.2);
   --alpha40: rgba(255,255,255,0.4);
-  --alpha45: rgba(255,255,255,0.4);
   --alpha50: rgba(255,255,255,0.5);
   --alphagg: rgba(128,128,128,0.05);
   --alpha60: rgba(255,255,255,0.6);
@@ -79,11 +78,10 @@
   --block-border: #3d3d3e;
   --block-hover: #333234;
   --theme-link-opa: rgba(160,142,210,0.4);
-  --theme-link-opaq: rgba(160,142,210,0.3);
+  --theme-link-opaq: rgba(160,142,210,0.4);
   --leftbar-bg: #3d3d3e;
   --alpha20: rgba(0,0,0,0.2);
   --alpha40: rgba(0,0,0,0.4);
-  --alpha45: rgba(0,0,0,0.4);
   --alpha50: rgba(0,0,0,0.5);
   --alpha60: rgba(0,0,0,0.6);
   --alpha75: rgba(0,0,0,0.75);
@@ -112,7 +110,6 @@
     --leftbar-bg: #e5e5e6;
     --alpha20: rgba(255,255,255,0.2);
     --alpha40: rgba(255,255,255,0.4);
-    --alpha45: rgba(255,255,255,0.4);
     --alpha50: rgba(255,255,255,0.5);
     --alphagg: rgba(128,128,128,0.05);
     --alpha60: rgba(255,255,255,0.6);
@@ -137,11 +134,10 @@
     --block-border: #3d3d3e;
     --block-hover: #333234;
     --theme-link-opa: rgba(160,142,210,0.4);
-    --theme-link-opaq: rgba(160,142,210,0.3);
+    --theme-link-opaq: rgba(160,142,210,0.4);
     --leftbar-bg: #3d3d3e;
     --alpha20: rgba(0,0,0,0.2);
     --alpha40: rgba(0,0,0,0.4);
-    --alpha45: rgba(0,0,0,0.4);
     --alpha50: rgba(0,0,0,0.5);
     --alpha60: rgba(0,0,0,0.6);
     --alpha75: rgba(0,0,0,0.75);
@@ -5059,7 +5055,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 .categories-widget {
   border-radius: 12px;
   padding: 12px 8px;
-  background: var(--alpha20);
+  background: var(--alpha50);
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
 .categories-widget .post-list .cat.child {
@@ -5348,7 +5344,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 .widget-wrapper.markdown .widget-body {
   border-radius: 12px;
   padding: 4px 16px;
-  background: var(--alpha45);
+  background: var(--alpha50);
 }
 .widget-wrapper.markdown .widget-body a:not([class]) {
   transition: all 0.2s ease-out;
@@ -5369,7 +5365,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   background: var(--alpha50);
 }
 .widget-wrapper.markdown .linklist .link:hover {
-  background: var(--alpha60);
+  background: var(--alpha100);
 }
 .widget-wrapper.post-card .widget-body {
   max-width: 100%;
@@ -5421,7 +5417,7 @@ details.toc[open] >div.body section .header+.doc_tree {
 .widget-wrapper.tagcloud .widget-body {
   border-radius: 12px;
   padding: 12px 16px;
-  background: var(--alpha20);
+  background: var(--alpha50);
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
 }
 .widget-wrapper.tagcloud .widget-body a {
@@ -5727,7 +5723,7 @@ details.toc[open] >div.body section .header+.doc_tree {
     color: var(--text-p2);
   }
   .widget-wrapper.toc .widget-footer a {
-    background: var(--alpha20);
+    background: var(--alpha100);
   }
   .widget-wrapper.toc .widget-footer a+a {
     margin-top: 4px;

@@ -17,11 +17,11 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f9fafb">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="var(--site-bg)">
   
-  <title>星域 - 宇宙尽头的餐馆</title>
+  <title>分类 - 宇宙尽头的餐馆</title>
 
   
     <meta property="og:type" content="website">
-<meta property="og:title" content="星域">
+<meta property="og:title" content="分类">
 <meta property="og:url" content="https://flyalready.cn/categories/">
 <meta property="og:site_name" content="宇宙尽头的餐馆">
 <meta property="og:locale" content="zh_CN">
@@ -77,7 +77,7 @@
   
   
 
-<div class="navbar top"><nav class="post"><a href="/">光年新讯</a><a class="active" href="/categories">星域</a><a href="/tags">星标</a><a href="/topic">星际特派</a><a href="/archives">归档</a><a href="/wiki/">银河展厅</a></nav></div>
+<div class="navbar top"><nav class="post"><a href="/">光年新讯</a><a class="active" href="/categories">分类</a><a href="/tags">标签</a><a href="/topic">专栏</a><a href="/archives">归档</a><a href="/wiki/">银河展厅</a></nav></div>
   <div class='post-list'>
     <article class='' id='cats'>
       
@@ -156,10 +156,9 @@ function show_runtime() {
 }
 show_runtime();
 </script> 
-<span class="totalcount">收集了 32 颗星星 ✧</span><span class="post-count"> 共 6.9w 颗星尘，</span>&emsp;<button id="toggleButton" style="background-color: #f0f0f0; border: none; border-radius: 5px; cursor: pointer; ">Let it snow!</button><script src="/js/snowflake.js"></script></div></footer><script>
+<span class="totalcount">收集了 32 颗星星 ✧</span><span class="post-count"> 共 7w 颗星尘，</span>&emsp;<button id="toggleButton" style="background-color: #f0f0f0; border: none; border-radius: 5px; cursor: pointer; ">Let it snow!</button><script src="/js/snowflake.js"></script></div></footer><script>
     document.addEventListener("DOMContentLoaded", function() {
-      var footer = document.querySelector('.page-footer'); // 确保只获取footer内的元素
-      var countSpan = footer.querySelector('.post-count');
+      var countSpan = document.querySelector('.post-count');
       var words = countSpan.innerText.match(/(\d+(\.\d+)?)([kKwW])?/);
       var numWords = 0;
       if (words[3] === 'w' || words[3] === 'W') {
@@ -230,7 +229,7 @@ show_runtime();
     });
   </script>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-<div class="widgets"><widget class="widget-wrapper"><div class="widget-header dis-select"><span class="name">🗂️ 星域</span></div>
+<div class="widgets"><widget class="widget-wrapper"><div class="widget-header dis-select"><span class="name">🗂️ 分类索引</span></div>
 
   <div class='post-list categories-widget'>
     <article class='' id='cats'>
@@ -564,7 +563,7 @@ show_runtime();
     const messages = {
       light: `切换到浅色模式`,
       dark: `切换到深色模式`,
-      auto: `跟随星系色彩`,
+      auto: `切换到跟随系统配色`,
     }
     hud?.toast?.(messages[newTheme])
   }

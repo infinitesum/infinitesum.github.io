@@ -82,7 +82,7 @@
 <div class="article banner top">
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
-<span class="sep"></span><a class="cap breadcrumb" id="menu" href="/wiki">银河展厅</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/notes/A-progressive-reading-prompt">备忘录</a></div>
+<span class="sep"></span><a class="cap breadcrumb" id="menu" href="/wiki">文档库</a><span class="sep"></span><a class="cap breadcrumb" id="proj" href="/notes/A-progressive-reading-prompt">备忘录</a></div>
 <div class="flex-row" id="post-meta"><span class="text created">更新于：<time datetime="2024-03-15T09:00:44.000Z">2024年3月15日</time></span></div></div></div>
     
     <div class="bottom only-title">
@@ -148,10 +148,9 @@ function show_runtime() {
 }
 show_runtime();
 </script> 
-<span class="totalcount">收集了 32 颗星星 ✧</span><span class="post-count"> 共 6.9w 颗星尘，</span>&emsp;<button id="toggleButton" style="background-color: #f0f0f0; border: none; border-radius: 5px; cursor: pointer; ">Let it snow!</button><script src="/js/snowflake.js"></script></div></footer><script>
+<span class="totalcount">收集了 32 颗星星 ✧</span><span class="post-count"> 共 7w 颗星尘，</span>&emsp;<button id="toggleButton" style="background-color: #f0f0f0; border: none; border-radius: 5px; cursor: pointer; ">Let it snow!</button><script src="/js/snowflake.js"></script></div></footer><script>
     document.addEventListener("DOMContentLoaded", function() {
-      var footer = document.querySelector('.page-footer'); // 确保只获取footer内的元素
-      var countSpan = footer.querySelector('.post-count');
+      var countSpan = document.querySelector('.post-count');
       var words = countSpan.innerText.match(/(\d+(\.\d+)?)([kKwW])?/);
       var numWords = 0;
       if (words[3] === 'w' || words[3] === 'W') {
@@ -513,7 +512,7 @@ show_runtime();
     const messages = {
       light: `切换到浅色模式`,
       dark: `切换到深色模式`,
-      auto: `跟随星系色彩`,
+      auto: `切换到跟随系统配色`,
     }
     hud?.toast?.(messages[newTheme])
   }

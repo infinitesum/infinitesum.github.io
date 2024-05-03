@@ -196,7 +196,7 @@ And, even better, it’s free! 我同学曾跟我说，我一个人能把这个�
 
 <div class="article-footer fs14">
     <section id="license">
-      <div class="header"><span>星际许可</span></div>
+      <div class="header"><span>许可协议</span></div>
       <div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
 </div>
     </section>
@@ -271,10 +271,9 @@ function show_runtime() {
 }
 show_runtime();
 </script> 
-<span class="totalcount">收集了 32 颗星星 ✧</span><span class="post-count"> 共 6.9w 颗星尘，</span>&emsp;<button id="toggleButton" style="background-color: #f0f0f0; border: none; border-radius: 5px; cursor: pointer; ">Let it snow!</button><script src="/js/snowflake.js"></script></div></footer><script>
+<span class="totalcount">收集了 32 颗星星 ✧</span><span class="post-count"> 共 7w 颗星尘，</span>&emsp;<button id="toggleButton" style="background-color: #f0f0f0; border: none; border-radius: 5px; cursor: pointer; ">Let it snow!</button><script src="/js/snowflake.js"></script></div></footer><script>
     document.addEventListener("DOMContentLoaded", function() {
-      var footer = document.querySelector('.page-footer'); // 确保只获取footer内的元素
-      var countSpan = footer.querySelector('.post-count');
+      var countSpan = document.querySelector('.post-count');
       var words = countSpan.innerText.match(/(\d+(\.\d+)?)([kKwW])?/);
       var numWords = 0;
       if (words[3] === 'w' || words[3] === 'W') {
@@ -641,7 +640,7 @@ show_runtime();
     const messages = {
       light: `切换到浅色模式`,
       dark: `切换到深色模式`,
-      auto: `跟随星系色彩`,
+      auto: `切换到跟随系统配色`,
     }
     hud?.toast?.(messages[newTheme])
   }

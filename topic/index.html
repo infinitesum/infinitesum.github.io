@@ -75,7 +75,7 @@
 
 
 
-<div class="navbar top"><nav class="post"><a href="/">光年新讯</a><a href="/categories">星域</a><a href="/tags">星标</a><a class="active" href="/topic">星际特派</a><a href="/archives">归档</a><a href="/wiki/">银河展厅</a></nav></div><div class="post-list wiki topic"><a class="post-card wiki topic" href="/S4-POI/">
+<div class="navbar top"><nav class="post"><a href="/">光年新讯</a><a href="/categories">分类</a><a href="/tags">标签</a><a class="active" href="/topic">专栏</a><a href="/archives">归档</a><a href="/wiki/">银河展厅</a></nav></div><div class="post-list wiki topic"><a class="post-card wiki topic" href="/S4-POI/">
 <article class="md-text"><div class="preview"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/10433048.png"/></div><div class="excerpt"><h2 class="post-title">Person of Interest 英语观影笔记</h2><p>诞生于图书馆与电子屏之间的正义，握过枪又抱紧婴儿的手指，绝版小说与二进制代码，挖洞藏了戒指的《理智与情感》，机器彻夜不休地打印出记忆，造神者为人弑神，已有坟墓者最终士死知己。</p></div></article>
 </a></div><div class="post-list wiki topic"><a class="post-card wiki topic" href="/empirical/4-descriptive-stats/">
 <article class="md-text"><div class="preview"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/10433048.png"/></div><div class="excerpt"><h2 class="post-title">浅谈实证研究方法论</h2><p>实证研究4讲 文献阅读方法</p></div></article>
@@ -109,10 +109,9 @@ function show_runtime() {
 }
 show_runtime();
 </script> 
-<span class="totalcount">收集了 32 颗星星 ✧</span><span class="post-count"> 共 6.9w 颗星尘，</span>&emsp;<button id="toggleButton" style="background-color: #f0f0f0; border: none; border-radius: 5px; cursor: pointer; ">Let it snow!</button><script src="/js/snowflake.js"></script></div></footer><script>
+<span class="totalcount">收集了 32 颗星星 ✧</span><span class="post-count"> 共 7w 颗星尘，</span>&emsp;<button id="toggleButton" style="background-color: #f0f0f0; border: none; border-radius: 5px; cursor: pointer; ">Let it snow!</button><script src="/js/snowflake.js"></script></div></footer><script>
     document.addEventListener("DOMContentLoaded", function() {
-      var footer = document.querySelector('.page-footer'); // 确保只获取footer内的元素
-      var countSpan = footer.querySelector('.post-count');
+      var countSpan = document.querySelector('.post-count');
       var words = countSpan.innerText.match(/(\d+(\.\d+)?)([kKwW])?/);
       var numWords = 0;
       if (words[3] === 'w' || words[3] === 'W') {
@@ -183,7 +182,7 @@ show_runtime();
     });
   </script>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right">
-<div class="widgets"><widget class="widget-wrapper"><div class="widget-header dis-select"><span class="name">🗂️ 星域</span></div>
+<div class="widgets"><widget class="widget-wrapper"><div class="widget-header dis-select"><span class="name">🗂️ 分类索引</span></div>
 
   <div class='post-list categories-widget'>
     <article class='' id='cats'>
@@ -517,7 +516,7 @@ show_runtime();
     const messages = {
       light: `切换到浅色模式`,
       dark: `切换到深色模式`,
-      auto: `跟随星系色彩`,
+      auto: `切换到跟随系统配色`,
     }
     hud?.toast?.(messages[newTheme])
   }

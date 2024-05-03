@@ -1,0 +1,42 @@
+%% various complements dictionary %%
+emoji>>>{% emoji  %},插入表情标签,,emoj,表情
+mark>>>{% mark  color: %},插入标记标签,,mark,标记
+hashtag>>>{% hashtag  color: %},插入hashtag标签,,hashtag,标签
+image>>>{% image  download: width: padding: bg: %},插入image图片标签,,image,图片
+quot>>>{% quot  icon:hashtag %},插入quot引用标签,,quot,引用
+poetry>>>{% poetry 游山西村 author:陆游 footer:诗词节选 %}\n{% endpoetry %},插入poetry诗词标签,,poetry,诗词
+note>>>{% note [title] content color: %},插入note备注块标签,,note,备注
+link>>>{% link href [title] [icon:src] [desc:true/false] %},插入link链接卡片标签,,link,链接
+button>>>{% button text url [icon:key/src] [color:color] [size:xs] %},插入button按钮标签,,button,按钮
+okr>>>{% okr o1 %}\n{% endokr %},插入okr目标管理标签,,okr,目标
+copy>>>{% copy [code] prefix:$ %},插入copy复制行标签,,copy,复制
+radio>>>{% radio checked:true [name] %},插入radio单选标签,,radio,单选
+checkbox>>>{% checkbox symbol: color: checked: [name] %},插入checkbox复选标签,,checkbox,复选
+audio>>>{% audio  %},插入audio音频标签,,audio,音频
+video>>>{% video  %},插入video视频标签,,video,视频
+navbar>>>{% navbar active:/wiki/ [文章](/) [项目](/wiki/) %},插入navbar导航栏标签,,navbar,导航
+timeline>>>{% timeline %}\n<!-- node [text] -->\n{% endtimeline %},插入timeline时间线标签,,timeline,时间线
+folders>>>{% folders %}\n<!-- folder 题目1 -->\n{% endfolders %},插入folders文件夹/折叠容器标签,,folders,文件夹
+friends>>>{% friends [name] %},插入friends友链标签,,friends,友链
+sites>>>{% sites 分组名 %},插入sites站点标签,,sites,站点
+md>>>{% md [url] %},插入md标签,渲染外部 markdown 文件,,md,markdown
+toc>>>{% toc wiki:xxx [open:true] [display:mobile] title %},插入toc文档目录树标签,,toc,目录
+box>>>{% box [title] [color:color] [child:codeblock/tabs] %}\n{% endbox %},插入box盒子容器标签,,box,盒子
+tabs>>>{% tabs active: align:center %}\n<!-- tab [name] -->\n{% endtabs %},插入tabs分栏容器标签,,tabs,分栏
+grid>>>{% grid bg:box/card %}\n<!-- cell -->\n{% endgrid %},插入grid标签,,grid,网格
+gallery>>>{% gallery %}\n{% endgallery %},插入gallery图库容器标签,,gallery,图库
+albums>>>{% albums [group_id] %},插入albums专辑容器标签,,albums,专辑
+posters>>>{% posters [group_id] %},插入posters海报容器标签,,posters,海报
+banner>>>{% banner [name] bg: %}\n{% endbanner %},插入banner横幅容器标签,,banner,横幅
+swiper>>>{% swiper effect:cards %}\n\n{% endswiper %},插入swiper轮播容器标签,,swiper,轮播
+ghcard>>>{% ghcard [name] %},插入ghcard标签,,ghcard,卡片
+ghcard-dark>>>{% ghcard [name] theme:dark %},插入ghcard标签（暗黑主题）,,ghcard-dark,暗黑
+psw>>>{% psw 密码 %},插入psw密码标
+签,,psw,密码
+u>>>{% u 下划线 %},插入u下划线标签,,u,下划线
+emp>>>{% emp 着重号 %},插入emp着重号标签,,emp,着重号
+wavy>>>{% wavy 波浪线 %},插入wavy波浪线标签,,wavy,波浪线
+del>>>{% del 删除线 %},插入del删除线标签,,del,删除线
+sup>>>{% sup 上角标 %},插入sup上角标标签,,sup,上角标
+sub>>>{% sub 下角标 %},插入sub下角标标签,,sub,下角标
+kbd>>>{% kbd ⌘ %},插入kbd键盘样式标签,,kbd,键盘

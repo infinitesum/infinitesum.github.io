@@ -16,12 +16,11 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   
 
-//节日弹窗图片
   document.addEventListener('DOMContentLoaded', function () {
     var holidays = [
       { startDate: '2024-01-01', endDate: '2024-01-01', image: '/asset/images/festivals/newyear.gif' },
       { startDate: '2024-02-10', endDate: '2024-02-16', image: '/asset/images/festivals/springfestival.gif' },
-      { startDate: '2024-04-05', endDate: '2024-04-05', image: '/asset/images/festivals/清明.gif' },
+      { startDate: '2024-04-05', endDate: '2024-04-05', image: '/asset/images/festivals/qingming.gif' },
       { startDate: '2024-05-01', endDate: '2024-05-05', name:"劳动节", image: '/asset/images/festivals/laborsday.gif' },
       { startDate: '2024-05-12', endDate: '2024-05-12', name:"母亲节", image: '/asset/images/festivals/mothersday.gif'},
       { startDate: '2024-06-08', endDate: '2024-06-10', name:"端午节", image: '/asset/images/festivals/dragonboat.gif' },
@@ -45,14 +44,28 @@ document.addEventListener("DOMContentLoaded", function() {
                 banner.style = "position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1000; max-width: 90%; max-height: 80%; border-radius: 15px; cursor: pointer;";
                 var overlay = document.createElement('div');
                 overlay.style = "position: fixed; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); top: 0; left: 0; z-index: 999; cursor: pointer;";
+                
+                document.body.appendChild(overlay);
+                document.body.appendChild(banner);
+
+                // 设置一个定时器使彩纸持续下落
+                var confettiInterval = setInterval(function() {
+                    confetti({
+                        particleCount: 5,  // 少量粒子，可以增加更多
+                        angle: 90,  // 垂直下落
+                        spread: 60,  // 分散角度，可以调整更大或更小
+                        origin: { x: 0.5 },  // 从顶部中心开始
+                        gravity: 0.5,  // 影响下落速度，可以调整为更大或更小的数值
+                        ticks: 300  // 影响彩纸在空中停留的时间
+                    });
+                }, 400); // 每400毫秒触发一次
+
                 overlay.onclick = banner.onclick = function () {
+                    clearInterval(confettiInterval); // 停止彩纸效果
                     document.body.removeChild(banner);
                     document.body.removeChild(overlay);
                 };
-                document.body.appendChild(overlay);
-                document.body.appendChild(banner);
             }
         });
     }
 });
-

@@ -324,3 +324,37 @@ table a:not([class]) {
   fill: rgb(255, 124, 180)!important;
 }
 
+
+
+/* from https: //github.com/weekdaycare/weekdaycare.github.io/blob/main/css/scrollbar.css */
+
+/* 基础滚动条样式 */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 8px;
+  opacity: 0; /* 初始设为完全透明 */
+  transition: opacity 0.5s; /* 渐变效果 */
+}
+
+/* 滚动条轨道 */
+::-webkit-scrollbar-track {
+  background-color: rgba(200, 155, 155, 0);
+  border-radius: 2em;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  background-color: #c3c0c1;
+  border-radius: 2em;
+  opacity: 1; /* 滑块不透明 */
+}
+
+/* 当滚动时，滚动条显示 */
+body:hover ::-webkit-scrollbar {
+  opacity: 1; /* 鼠标悬停在页面上时显示滚动条 */
+}
+
+/* 适应暗色主题的滚动条滑块 */
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background-color: #1f1f1f;
+}

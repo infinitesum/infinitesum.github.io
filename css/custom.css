@@ -324,35 +324,3 @@ table a:not([class]) {
   fill: rgb(255, 124, 180)!important;
 }
 
-
-
-.table-responsive {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-}
-
-table {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 20px;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid #ddd;
-}
-
-th, td {
-    text-align: left;
-    padding: 8px;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
-td {
-    word-wrap: break-word; /* 允许单词断行 */
-}

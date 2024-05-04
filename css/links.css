@@ -1,0 +1,60 @@
+/* 友情链接双栏 */
+.article-list--compact.links {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr); /* 确保双栏显示 */
+    gap: 16px; /* 栏之间和栏内元素的间距 */
+    padding: 10px; /* 容器的内边距 */
+    background: none;
+    box-shadow: none;
+}
+
+.article-list--compact.links article {
+    display: ruby;
+    align-items: center; /* 使内容垂直居中 */
+    justify-content: space-between; /* 内容和图片两侧对齐 */
+    background: var(--card); /* 卡片背景 */
+    border: none;
+    box-shadow: var(--shadow-l2); /* 阴影效果 */
+    padding: 15px; /* 卡片内边距 */
+    border-radius: 10px; /* 圆角 */
+}
+
+.article-details {
+    flex: 1; /* 让文本内容填充除图片外的所有可用空间 */
+    margin-right: 20px; /* 与图片保持间距 */
+}
+
+.article-image {
+    flex-shrink: 0; /* 防止图片缩小 */
+    min-width: 50px; /* 图片最小宽度，确保图片区域大小固定 */
+    height: 50px; /* 图片高度固定 */
+}
+
+.article-image img {
+    width: 100%; /* 图片充满整个容器宽度 */
+    height: 100%; /* 图片充满整个容器高度 */
+    object-fit: cover; /* 图片内容按比例填充并覆盖容器 */
+}
+
+
+.article-title
+{
+    color: var(--text);
+    line-height: 1.8;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.article-time {
+    color: var(--text-meta);
+    line-height: 1.8;
+    font-size: 0.8rem;
+    }
+
+.article-link {
+    color: var(--theme-link);
+    line-height: 1.8;
+    font-size: 0.8rem;
+    font-style: italic;
+}

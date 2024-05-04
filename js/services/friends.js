@@ -12,10 +12,17 @@ utils.jq(() => {
       utils.request(el, api, function(data) {
         for (let item of (data.content || data)) {
           var cell = `<div class="grid-cell user-card">`;
-          cell += `<a class="card-link" target="_blank" rel="external nofollow noopener noreferrer" href="${item.html_url || item.url}">`;;
-          cell += `<img src="${item.avatar_url || item.avatar || item.icon || default_avatar}" onerror="javascript:this.removeAttribute(\'data-src\');this.src=\'${default_avatar}\';"/>`;
+          cell += `<a class="card-link" target="_blank" rel="external nofollow noopener noreferrer" href="${item.html_url || item.url}">`;
+          cell += `<img src="${item.avatar_url || item.avatar || item.icon || default_avatar}" onerror="javascript:this.removeAttribute('data-src');this.src='${default_avatar}';"/>`;
           cell += `<div class="name image-meta">`;
           cell += `<span class="image-caption">${item.title || item.login}</span>`;
+          // Adding description and note
+          if (item.description) {
+            cell += `<div class="user-description">${item.description}</div>`;
+          }
+          if (item.note) {
+            cell += `<div class="user-note">${item.note}</div>`;
+          }
           cell += `</div>`;
           cell += `</a>`;
           cell += `</div>`;

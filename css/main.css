@@ -3165,6 +3165,16 @@ details.folding[child=iframe] >div.body {
   padding: 15px;
   border-radius: 10px;
   flex-basis: calc(40% - 20px); /* 自动适应容器宽度 */
+  min-height: 80px;
+  transition: background 0.3s ease, box-shadow 0.3s ease; /* 添加过渡动画 */
+}
+.users-wrap .user-card:hover {
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2); /* 鼠标悬浮时的阴影加深 */
+}
+@media (prefers-color-scheme: dark) {
+  .users-wrap .user-card:hover {
+    background: var(--theme-link-opaq);
+  }
 }
 .users-wrap .user-card a {
   display: flex;
@@ -3186,6 +3196,10 @@ details.folding[child=iframe] >div.body {
   height: 50px;
   margin-left: 20px; /* 与文字内容保持间隔 */
   order: 2; /* 将图片放在右侧 */
+  transition: transform 0.3s ease; /* 添加变换的过渡动画 */
+}
+.users-wrap .user-card:hover img {
+  transform: scale(1.2) rotate(5deg); /* 鼠标悬浮时缩放和旋转图片 */
 }
 .users-wrap .user-card .name {
   order: 1; /* 确保文字内容在左侧 */
@@ -3207,7 +3221,6 @@ details.folding[child=iframe] >div.body {
 }
 .user-note {
   font-size: 0.8rem;
-  font-style: italic;
   color: var(--theme-link);
 }
 .tag-plugin.gallery .grid-cell,

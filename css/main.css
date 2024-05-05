@@ -3189,7 +3189,7 @@ details.folding[child=iframe] >div.body {
   }
 }
 .image-caption {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 .user-description {
@@ -3198,7 +3198,7 @@ details.folding[child=iframe] >div.body {
   color: var(--text-meta);
 }
 .user-note {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-style: italic;
   color: var(--theme-link);
 }

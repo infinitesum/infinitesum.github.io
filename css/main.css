@@ -3149,28 +3149,37 @@ details.folding[child=iframe] >div.body {
 .users-wrap .grid-box {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* 根据需要调整列宽 */
-  gap: 16px;
+  column-gap: 8px;
+  row-gap: 16px;
   background: none;
   box-shadow: none;
 }
 .users-wrap .user-card {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between; /* 确保子元素分布在容器两侧 */
+  flex-direction: column; /* 垂直堆叠子元素 */
+  align-items: center; /* 水平居中对齐子元素 */
+  justify-content: center; /* 垂直居中对齐子元素 */
   background: var(--card);
   border: none;
   box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
   padding: 15px;
   border-radius: 10px;
   flex-basis: calc(40% - 20px); /* 自动适应容器宽度 */
+  height: 90px;
 }
 .users-wrap .user-card a {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between; /* 确保链接内的元素分布在两侧 */
-  text-decoration: none; /* 去除链接下划线 */
-  color: inherit; /* 继承文字颜色 */
-  width: 100%; /* 链接占满整个卡片 */
+  align-items: center; /* 水平居中对齐子元素 */
+  justify-content: center; /* 垂直居中对齐子元素 */
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+.users-wrap .user-card img {
+  border-radius: 64px;
+  width: 50px; /* 图片宽度 */
+  height: 50px; /* 图片高度 */
+  margin-bottom: 10px; /* 图片和名称之间的间隔 */
 }
 .users-wrap .user-card img {
   border-radius: 64px;

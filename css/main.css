@@ -3148,7 +3148,7 @@ details.folding[child=iframe] >div.body {
 }
 .users-wrap .grid-box {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); /* 根据需要调整列宽 */
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); /* 根据需要调整列宽 */
   column-gap: 10px;
   row-gap: 10px;
   border-radius: 8px;

@@ -72,13 +72,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-//document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
   // 使用相对路径检查当前页面
-//  if (window.location.pathname === '/friends/') {
-//    var element = document.querySelector('aside.l_right');
-//    if (element) {
-//      element.parentNode.removeChild(element);
-//    }
-//  }
-//});
+  if (window.location.pathname === '/friends/') {
+    var element = document.querySelector('aside.l_right');
+    if (element) {
+      element.parentNode.removeChild(element);
+    }
+  }
+});
 

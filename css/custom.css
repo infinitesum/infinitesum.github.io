@@ -360,3 +360,6 @@ body:hover ::-webkit-scrollbar {
 }
 
 
+p span[style*="background:#"] {
+  color: black !important;
+}

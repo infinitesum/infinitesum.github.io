@@ -6265,6 +6265,76 @@ details.toc[open] >div.body section .header+.doc_tree {
     margin-top: 4rem;
   }
 }
+.md-text .tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 2rem;
+}
+.md-text .tag-list a.tag {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  color: var(--text-p2);
+  margin: 4px;
+  padding: 0.5em 0.75rem;
+  border-radius: 4px;
+  background: var(--block);
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+.md-text .tag-list a.tag:before {
+  content: "#";
+  margin-left: -2px;
+  margin-right: 2px;
+  opacity: 0.4;
+}
+.md-text .tag-list a.tag:hover {
+  color: var(--text);
+  background: var(--block-hover);
+}
+.md-text .tag-list a.tag:hover:before {
+  color: #a891e8;
+  opacity: 1;
+}
+.post-list .post-card .meta.cap .tag:before {
+  content: "#";
+  margin-left: -2px;
+  margin-right: 2px;
+  opacity: 0.4;
+}
+.widget-body.tag-tree .tag-subtree > a > .tag-switcher-wrapper {
+  width: 1.75rem;
+  height: 0.875rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.widget-body.tag-tree .tag-subtree > a > .tag-switcher-wrapper:hover {
+  color: #a891e8;
+}
+.widget-body.tag-tree .tag-subtree.parent-tag > a .tag-switcher {
+  display: inline-block;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-width: 1px;
+  border-style: none solid solid none;
+  transform: translateX(-25%) rotate(-45deg);
+}
+.widget-body.tag-tree .tag-subtree.parent-tag.expanded > a .tag-switcher {
+  transform: translateY(-25%) rotate(45deg);
+}
+.widget-body.tag-tree .tag-subtree.parent-tag > .tag-subtree {
+  display: none;
+}
+.widget-body.tag-tree .tag-subtree.parent-tag.expanded > .tag-subtree {
+  display: block;
+}
+.widget-body.tag-tree .tag-subtree .tagcon {
+  font-size: smaller;
+  opacity: 0.4;
+  margin-right: 0.25rem;
+}
 .l_body {
   display: grid;
   grid-template-columns: 1fr minmax(200px, var(--width-main)) 1fr;

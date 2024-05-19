@@ -87,7 +87,7 @@
   <span class="sep"></span>
   <a class="cap breadcrumb" href="/about/books/">This is my book title</a>
   </div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-05-19T18:54:07.402Z">2024年5月20日</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-05-19T18:54:07.402Z">2024年5月20日</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2024-05-19T19:16:23.052Z">2024年5月20日</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2024-05-19T19:16:23.053Z">2024年5月20日</time></span></div></div></div>
     
     <div class="bottom only-title">
       
@@ -699,6 +699,34 @@ show_runtime();
     }
   }
 </script>
+<script type="text/javascript">
+  (() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()
+</script>
+
 
 <!-- required -->
 <script src="/js/main.js?v=1.28.1" async></script>

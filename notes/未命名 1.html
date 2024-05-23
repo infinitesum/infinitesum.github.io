@@ -119,8 +119,6 @@
 <img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="../asset/posts/Pasted%20image%2020240413075058.png" style="width: 40px; margin: 5px;">
 </div>
 <center><span style="font-family: 'jiangxizhuokai';">以下开始废话流个人介绍——</span></center>
-
-<div class="article-footer fs14"></div>
 </article>
 <div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">回顾上一篇</div><a href="/notes/%E6%94%BF%E5%BA%9C%E5%BC%95%E5%AF%BC%E5%9F%BA%E9%87%91">政府引导基金</a></div><div class="item" id="next"><div class="note">接下来阅读</div><a href="/notes/%E7%94%9F%E4%BA%A7%E5%8A%9B%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB">生产力软件汇总</a></div></section></div>
 
@@ -478,34 +476,6 @@ show_runtime();
     }
   }
 </script>
-<script type="text/javascript">
-  (() => {
-    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
-    for (const tagSwitcher of tagSwitchers) {
-      tagSwitcher.addEventListener('click', (e) => {
-        const parent = e.target.closest('.tag-subtree.parent-tag')
-        parent.classList.toggle('expanded')
-        e.preventDefault()
-      })
-    }
-
-    // Get active tag from query string, then activate it.
-    const urlParams = new URLSearchParams(window.location.search)
-    const activeTag = urlParams.get('tag')
-    if (activeTag) {
-      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
-      if (tag) {
-        tag.querySelector('a').classList.add('active')
-        
-        while (tag) {
-          tag.classList.add('expanded')
-          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
-        }
-      }
-    }
-  })()
-</script>
-
 
 <!-- required -->
 <script src="/js/main.js?v=1.28.1" async></script>

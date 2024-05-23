@@ -135,9 +135,7 @@
     style G fill:#f6dfeb,stroke:#90be6d,stroke-width:1px
     style I fill:#f6dfeb,stroke:#43aa8b,stroke-width:1px
     style J fill:#f6dfeb,stroke:#4d908e,stroke-width:1px
-    style K fill:#f6dfeb,stroke:#277da1,stroke-width:1px</pre>
-<div class="article-footer fs14"></div>
-</article>
+    style K fill:#f6dfeb,stroke:#277da1,stroke-width:1px</pre></article>
 <div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">回顾上一篇</div><a href="/notes/types-of-callouts">types of callouts</a></div><div class="item" id="next"><div class="note">接下来阅读</div><a href="/notes/%E5%9B%BD%E5%AE%B6%E7%A4%BE%E7%A7%91%E5%9F%BA%E9%87%912023%E5%B9%B4%E5%BA%A6%E8%AF%BE%E9%A2%98%E6%8C%87%E5%8D%97">国家社科基金2023年度课题指南</a></div></section></div>
 
 
@@ -499,34 +497,6 @@ show_runtime();
     }
   }
 </script>
-<script type="text/javascript">
-  (() => {
-    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
-    for (const tagSwitcher of tagSwitchers) {
-      tagSwitcher.addEventListener('click', (e) => {
-        const parent = e.target.closest('.tag-subtree.parent-tag')
-        parent.classList.toggle('expanded')
-        e.preventDefault()
-      })
-    }
-
-    // Get active tag from query string, then activate it.
-    const urlParams = new URLSearchParams(window.location.search)
-    const activeTag = urlParams.get('tag')
-    if (activeTag) {
-      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
-      if (tag) {
-        tag.querySelector('a').classList.add('active')
-        
-        while (tag) {
-          tag.classList.add('expanded')
-          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
-        }
-      }
-    }
-  })()
-</script>
-
 
 <!-- required -->
 <script src="/js/main.js?v=1.28.1" async></script>

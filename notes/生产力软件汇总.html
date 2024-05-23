@@ -122,8 +122,6 @@
 </ul>
 <p>最后推荐一个网站：</p>
 <p>[<a href="https://link.zhihu.com/?target=http%3A//setapp.com/">setapp.com</a>]类似于Apple Arcade的存在，通过订阅来获得很多的买断App，上述软件有一半以上这里都包含。可惜当我发现它时我已经为里面的软件花了数百元了。</p>
-
-<div class="article-footer fs14"></div>
 </article>
 <div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">回顾上一篇</div><a href="/notes/%E6%9C%AA%E5%91%BD%E5%90%8D%201">未命名 1</a></div><div class="item" id="next"><div class="note">接下来阅读</div><a href="/notes/%E7%BD%91%E9%A1%B5%E5%86%85%E5%AE%B9%E4%B8%80%E9%94%AE%E6%80%BB%E7%BB%93%EF%BC%9AKimi%20%E9%98%85%E8%AF%BB%E5%8A%A9%E6%89%8B">网页内容一键总结：Kimi 阅读助手</a></div></section></div>
 
@@ -486,34 +484,6 @@ show_runtime();
     }
   }
 </script>
-<script type="text/javascript">
-  (() => {
-    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
-    for (const tagSwitcher of tagSwitchers) {
-      tagSwitcher.addEventListener('click', (e) => {
-        const parent = e.target.closest('.tag-subtree.parent-tag')
-        parent.classList.toggle('expanded')
-        e.preventDefault()
-      })
-    }
-
-    // Get active tag from query string, then activate it.
-    const urlParams = new URLSearchParams(window.location.search)
-    const activeTag = urlParams.get('tag')
-    if (activeTag) {
-      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
-      if (tag) {
-        tag.querySelector('a').classList.add('active')
-        
-        while (tag) {
-          tag.classList.add('expanded')
-          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
-        }
-      }
-    }
-  })()
-</script>
-
 
 <!-- required -->
 <script src="/js/main.js?v=1.28.1" async></script>

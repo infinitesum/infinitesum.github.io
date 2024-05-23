@@ -100,6 +100,8 @@
 <p>LZ贴图慢，贴完之前不要插~<br />
 【顺便立个腐向警示牌XD】</p>
 <p><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="https://s2.loli.net/2024/02/28/1krX93hmqJ6vu4d.jpg" alt="IMG_2404.jpeg" /></p>
+
+<div class="article-footer fs14"></div>
 </article>
 <div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">回顾上一篇</div><a href="/wiki/poi-comments/S2E21">【S2E21观后感】剧本惊天地，脑洞泣鬼神</a></div><div class="item" id="next"><div class="note">接下来阅读</div><a href="/wiki/poi-comments/S2E13">【S2E13观剧笔记】夕阳红天台爱情故事：你之所在，我之归途</a></div></section></div>
 
@@ -457,6 +459,34 @@ show_runtime();
     }
   }
 </script>
+<script type="text/javascript">
+  (() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()
+</script>
+
 
 <!-- required -->
 <script src="/js/main.js?v=1.28.1" async></script>
@@ -566,7 +596,7 @@ show_runtime();
         const els = document.getElementsByClassName(`ds-${id}`);
         if (els?.length > 0) {
           utils.jq(() => {
-            if (id == 'timeline' || 'memos' || 'marked') {
+            if (id == 'timeline' || 'memos' || 'marked' || 'twikoo') { 
               utils.js(deps.marked).then(function () {
                 utils.js(js, { defer: true });
               });
@@ -632,6 +662,13 @@ show_runtime();
       needFancybox = true;
     }
   }
+	if (!needFancybox) {
+    const els = document.getElementsByClassName('ds-twikoo');
+    if (els != undefined && els.length > 0) {
+      needFancybox = true;
+    }
+  }
+
   if (needFancybox) {
     utils.css(ctx.fancybox.css);
     utils.js(ctx.fancybox.js, { defer: true }).then(function () {

@@ -112,6 +112,8 @@
 <p>原图很长，只好截成一段一段发了，欢迎戳源地址：<br />
 <a target="_blank" rel="noopener" href="http://weibo.com/2617312763/z1wWPE8nT?type=repost">http://weibo.com/2617312763/z1wWPE8nT?type=repost</a><br />
 也欢迎各种讨论啊 XDDDDD</p>
+
+<div class="article-footer fs14"></div>
 </article>
 <div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">回顾上一篇</div><a href="/wiki/poi-comments/S2E2">【S2E02观后感】技术宅身陷险境，前特工千里寻夫</a></div><div class="item" id="next"><div class="note">接下来阅读</div><a href="/wiki/poi-comments/S2E4">【S2E04观后感】他说，遇见你，是他这辈子最美好的事</a></div></section></div>
 
@@ -469,6 +471,34 @@ show_runtime();
     }
   }
 </script>
+<script type="text/javascript">
+  (() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()
+</script>
+
 
 <!-- required -->
 <script src="/js/main.js?v=1.28.1" async></script>
@@ -578,7 +608,7 @@ show_runtime();
         const els = document.getElementsByClassName(`ds-${id}`);
         if (els?.length > 0) {
           utils.jq(() => {
-            if (id == 'timeline' || 'memos' || 'marked') {
+            if (id == 'timeline' || 'memos' || 'marked' || 'twikoo') { 
               utils.js(deps.marked).then(function () {
                 utils.js(js, { defer: true });
               });
@@ -644,6 +674,13 @@ show_runtime();
       needFancybox = true;
     }
   }
+	if (!needFancybox) {
+    const els = document.getElementsByClassName('ds-twikoo');
+    if (els != undefined && els.length > 0) {
+      needFancybox = true;
+    }
+  }
+
   if (needFancybox) {
     utils.css(ctx.fancybox.css);
     utils.js(ctx.fancybox.js, { defer: true }).then(function () {

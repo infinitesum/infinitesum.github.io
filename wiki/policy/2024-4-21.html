@@ -185,6 +185,8 @@
 <p>新加坡与美国国家海洋和大气管理局签署了谅解备忘录，旨在加强环境管理和气候保护的双边合作。合作领域涵盖气候监测和预测、沿海科学、地球观测和抗热能力的强化。为推进这一合作，新加坡永续发展与环境部将与美国进行技术交流、信息共享，并开展联合项目和出版物。</p>
 <p>此外，新加坡企业发展局与淡马锡合作成立了“突破能源研究员—东南亚”，这是设在美国以外的首个研究员中心，致力于解决气候技术创新的早期障碍，推动技术发展和商业化，以助力全球减排和实现净零排放目标。参与计划的研究员可获得50万美元初始资金，并得到全球网络的支持。新加坡和美国长期合作于环保可持续发展领域，此次合作将提供更多应对气候变化的机会。</p>
 <p>（<a target="_blank" rel="noopener" href="https://www.mse.gov.sg/resource-room/category/2024-04-15-press-release-on-mou-signing-with-noaa">新加坡可持续发展与环境部</a>，<a target="_blank" rel="noopener" href="https://www.temasek.com.sg/en/news-and-resources/news-room/news/2024/breakthrough-energy-temasek-esg-jointly-establish-breakthrough-energy-fellows-sea">淡马锡</a>，<a target="_blank" rel="noopener" href="https://breakthroughenergy.org/news/breakthrough-energy-fellows-sea/">Breakthrough Energy Fellows</a>）</p>
+
+<div class="article-footer fs14"></div>
 </article>
 <div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">回顾上一篇</div><a href="/wiki/policy/2024-4-28">2024-4-28</a></div><div class="item" id="next"><div class="note">接下来阅读</div><a href="/wiki/policy/2024-4-14">2024-4-14</a></div></section></div>
 
@@ -545,6 +547,34 @@ show_runtime();
     }
   }
 </script>
+<script type="text/javascript">
+  (() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()
+</script>
+
 
 <!-- required -->
 <script src="/js/main.js?v=1.28.1" async></script>
@@ -654,7 +684,7 @@ show_runtime();
         const els = document.getElementsByClassName(`ds-${id}`);
         if (els?.length > 0) {
           utils.jq(() => {
-            if (id == 'timeline' || 'memos' || 'marked') {
+            if (id == 'timeline' || 'memos' || 'marked' || 'twikoo') { 
               utils.js(deps.marked).then(function () {
                 utils.js(js, { defer: true });
               });
@@ -720,6 +750,13 @@ show_runtime();
       needFancybox = true;
     }
   }
+	if (!needFancybox) {
+    const els = document.getElementsByClassName('ds-twikoo');
+    if (els != undefined && els.length > 0) {
+      needFancybox = true;
+    }
+  }
+
   if (needFancybox) {
     utils.css(ctx.fancybox.css);
     utils.js(ctx.fancybox.js, { defer: true }).then(function () {

@@ -202,6 +202,8 @@
 <p>中美双方探讨了下阶段两国各层级交往：积极评价禁毒合作，期待近日举行执法高层会晤；继续推进外交政策、亚太事务、海洋事务、人工智能对话磋商，保持两军沟通。</p>
 <p>双方就中东和朝鲜半岛局势交换意见，确认双方分管官员应就此会面。</p>
 <p>（<a target="_blank" rel="noopener" href="https://www.mfa.gov.cn/web/wjbz_673089/xghd_673097/202402/t20240217_11245934.shtml">中国外交部</a>，<a target="_blank" rel="noopener" href="https://www.state.gov/secretary-blinkens-meeting-with-peoples-republic-of-china-director-of-the-chinese-communist-party-ccp-central-foreign-affairs-commission-and-foreign-minister-wang-yi-3/">美国国务院</a>）</p>
+
+<div class="article-footer fs14"></div>
 </article>
 <div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">回顾上一篇</div><a href="/wiki/policy/2024-3-3">2024-3-3</a></div><div class="item" id="next"><div class="note">接下来阅读</div><a href="/wiki/policy/2024-2-18">2024-2-18</a></div></section></div>
 
@@ -562,6 +564,34 @@ show_runtime();
     }
   }
 </script>
+<script type="text/javascript">
+  (() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()
+</script>
+
 
 <!-- required -->
 <script src="/js/main.js?v=1.28.1" async></script>
@@ -671,7 +701,7 @@ show_runtime();
         const els = document.getElementsByClassName(`ds-${id}`);
         if (els?.length > 0) {
           utils.jq(() => {
-            if (id == 'timeline' || 'memos' || 'marked') {
+            if (id == 'timeline' || 'memos' || 'marked' || 'twikoo') { 
               utils.js(deps.marked).then(function () {
                 utils.js(js, { defer: true });
               });
@@ -737,6 +767,13 @@ show_runtime();
       needFancybox = true;
     }
   }
+	if (!needFancybox) {
+    const els = document.getElementsByClassName('ds-twikoo');
+    if (els != undefined && els.length > 0) {
+      needFancybox = true;
+    }
+  }
+
   if (needFancybox) {
     utils.css(ctx.fancybox.css);
     utils.js(ctx.fancybox.js, { defer: true }).then(function () {

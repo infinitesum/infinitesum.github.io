@@ -209,6 +209,8 @@
 <p>披露国家秘密基准刑10年。草案设置豁免条款：如披露的目的是揭露“对公共秩序、公共安全、公众健康的严重威胁，或严重影响特区政府依法履职的情况”，且相关公众利益“明显重于”保密利益、也没有可以替代披露机密的其他方式。</p>
 <p>特首可在任何时候就涉密和“涉及国安”的认定发出证明书，不局限于《港区国安法》47条所规定的“在司法程序中”。</p>
 <p>（<a target="_blank" rel="noopener" href="https://www.info.gov.hk/gia/general/202403/08/P2024030800145.htm">港府新闻公报</a>，<a target="_blank" rel="noopener" href="https://www.gld.gov.hk/egazette/pdf/20242811e/cs3202428112.pdf">草案全文</a>）</p>
+
+<div class="article-footer fs14"></div>
 </article>
 <div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">回顾上一篇</div><a href="/wiki/policy/2024-3-31">2024-3-31</a></div><div class="item" id="next"><div class="note">接下来阅读</div><a href="/wiki/policy/2024-3-17">2024-3-17</a></div></section></div>
 
@@ -569,6 +571,34 @@ show_runtime();
     }
   }
 </script>
+<script type="text/javascript">
+  (() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()
+</script>
+
 
 <!-- required -->
 <script src="/js/main.js?v=1.28.1" async></script>
@@ -678,7 +708,7 @@ show_runtime();
         const els = document.getElementsByClassName(`ds-${id}`);
         if (els?.length > 0) {
           utils.jq(() => {
-            if (id == 'timeline' || 'memos' || 'marked') {
+            if (id == 'timeline' || 'memos' || 'marked' || 'twikoo') { 
               utils.js(deps.marked).then(function () {
                 utils.js(js, { defer: true });
               });
@@ -744,6 +774,13 @@ show_runtime();
       needFancybox = true;
     }
   }
+	if (!needFancybox) {
+    const els = document.getElementsByClassName('ds-twikoo');
+    if (els != undefined && els.length > 0) {
+      needFancybox = true;
+    }
+  }
+
   if (needFancybox) {
     utils.css(ctx.fancybox.css);
     utils.js(ctx.fancybox.js, { defer: true }).then(function () {

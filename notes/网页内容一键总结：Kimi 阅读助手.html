@@ -101,6 +101,8 @@
 <div class="tag-plugin image"><div class="image-bg"><img class="lazy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" data-src="/asset/posts/CleanShot%202024-04-01%20at%2018.23.58@2x.png" alt="我谢谢您哈哈哈"/></div><div class="image-meta"><span class="image-caption center">我谢谢您哈哈哈</span></div></div>
 <p>类似的插件还有 Kimi Copilot，以纯文本的形式将网页内容传给Kimi，<font color="#ff0000">不能自定义prompt</font>，所以生成的总结内容比较受限。试用下来还是感觉Kimi 阅读助手更好用一些，简单来说就是 Kimi Copilot 的功能前者也能轻松实现，但是想要稍微详细一点的总结 Kimi Copilot 就没辙了。</p>
 <p>插件链接：<a target="_blank" rel="noopener" href="https://chromewebstore.google.com/detail/kimi%E9%98%85%E8%AF%BB%E5%8A%A9%E6%89%8B/iejcbdponpipehjlchccknbmnkonnmji">Kimi 阅读助手 - Chrome 应用商店</a></p>
+
+<div class="article-footer fs14"></div>
 </article>
 <div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">回顾上一篇</div><a href="/notes/%E7%94%9F%E4%BA%A7%E5%8A%9B%E8%BD%AF%E4%BB%B6%E6%B1%87%E6%80%BB">生产力软件汇总</a></div><div class="item" id="next"><div class="note">接下来阅读</div><a href="/notes/%E9%A1%B6%E5%88%8A%E9%A1%B6%E4%BC%9A%E5%86%99%E4%BD%9C">顶刊顶会写作</a></div></section></div>
 
@@ -458,6 +460,34 @@ show_runtime();
     }
   }
 </script>
+<script type="text/javascript">
+  (() => {
+    const tagSwitchers = document.querySelectorAll('.tag-subtree.parent-tag > a > .tag-switcher-wrapper')
+    for (const tagSwitcher of tagSwitchers) {
+      tagSwitcher.addEventListener('click', (e) => {
+        const parent = e.target.closest('.tag-subtree.parent-tag')
+        parent.classList.toggle('expanded')
+        e.preventDefault()
+      })
+    }
+
+    // Get active tag from query string, then activate it.
+    const urlParams = new URLSearchParams(window.location.search)
+    const activeTag = urlParams.get('tag')
+    if (activeTag) {
+      let tag = document.querySelector(`.tag-subtree[data-tag="${activeTag}"]`)
+      if (tag) {
+        tag.querySelector('a').classList.add('active')
+        
+        while (tag) {
+          tag.classList.add('expanded')
+          tag = tag.parentElement.closest('.tag-subtree.parent-tag')
+        }
+      }
+    }
+  })()
+</script>
+
 
 <!-- required -->
 <script src="/js/main.js?v=1.28.1" async></script>
@@ -567,7 +597,7 @@ show_runtime();
         const els = document.getElementsByClassName(`ds-${id}`);
         if (els?.length > 0) {
           utils.jq(() => {
-            if (id == 'timeline' || 'memos' || 'marked') {
+            if (id == 'timeline' || 'memos' || 'marked' || 'twikoo') { 
               utils.js(deps.marked).then(function () {
                 utils.js(js, { defer: true });
               });
@@ -633,6 +663,13 @@ show_runtime();
       needFancybox = true;
     }
   }
+	if (!needFancybox) {
+    const els = document.getElementsByClassName('ds-twikoo');
+    if (els != undefined && els.length > 0) {
+      needFancybox = true;
+    }
+  }
+
   if (needFancybox) {
     utils.css(ctx.fancybox.css);
     utils.js(ctx.fancybox.js, { defer: true }).then(function () {

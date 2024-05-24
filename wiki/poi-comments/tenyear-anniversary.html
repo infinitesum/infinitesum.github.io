@@ -603,7 +603,7 @@ show_runtime();
         const els = document.getElementsByClassName(`ds-${id}`);
         if (els?.length > 0) {
           utils.jq(() => {
-            if (id == 'timeline' || 'memos' || 'marked' || 'twikoo') { 
+            if (id == 'timeline' || 'memos' || 'marked' || 'twikoo') { 
               utils.js(deps.marked).then(function () {
                 utils.js(js, { defer: true });
               });
@@ -670,12 +670,11 @@ show_runtime();
     }
   }
 	if (!needFancybox) {
-    const els = document.getElementsByClassName('ds-twikoo');
-    if (els != undefined && els.length > 0) {
-      needFancybox = true;
-    }
-  }
-
+    const els = document.getElementsByClassName('ds-twikoo');
+    if (els != undefined && els.length > 0) {
+      needFancybox = true;
+    }
+  }
   if (needFancybox) {
     utils.css(ctx.fancybox.css);
     utils.js(ctx.fancybox.js, { defer: true }).then(function () {

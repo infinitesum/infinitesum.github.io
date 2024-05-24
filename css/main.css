@@ -4765,7 +4765,7 @@ p>strong>span.tag-plugin.icon {
   line-height: 1.25;
   padding: 0.75rem 1rem;
   --fsp: calc(17px - 1px);
-  font-size: var(--fsp);
+  font-size: 0.95rem;
 }
 .tag-plugin.timeline[api] .body p.title {
   font-weight: 700;
@@ -5825,7 +5825,7 @@ details.toc[open] >div.body section .header+.doc_tree {
   border-radius: 12px;
   border-top-left-radius: 2px /*cicada add*/;
   padding: 0.5rem 1rem;
-  margin: 0rem 1rem 0rem 1rem; /*cicada add*/
+  margin: 0rem 0rem 0rem 1rem; /*cicada add*/
 }
 .widget-wrapper.timeline .tag-plugin.timeline .timenode .body img {
   background: none;

@@ -20,34 +20,25 @@ utils.jq(() => {
       utils.onLoadSuccess(el); // 移除动画
       //cicada 1
       data.forEach((comment, j) => {
-        //cicada 1
-        // let commentText = comment.commentText;
-        // //if (!commentText || commentText.trim() === '') return; // 跳过空评论 //cicada comment 1
-        // // 转义字符
-        // commentText = commentText.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#039;");
-        // commentText = commentText.length > 50 ? commentText.substring(0, 50) + '...' : commentText;
-        //cicada 0
         var cell = '<div class="timenode" index="' + j + '">';
         cell += '<div class="header">';
-          // 添加用户头像
+        // 添加用户头像
         cell += '<div class="user-info">';
         const avatarImg = `<img class="user-avatar" src="${comment.avatar}" alt="Avatar">`;
         cell += avatarImg;
         cell += '<span>' + comment.nick + '</span>';
         cell += '</div>';
-        //cell += '<span>' + new Date(comment.created).toLocaleString() + '</span>';
-        cell += '<span>' + new Date(comment.created).toLocaleDateString() + '</span>'; //cicada modify
+        cell += '<span>' + new Date(comment.created).toLocaleDateString() + '</span>'; 
         cell += '</div>';
         let commentHTML = comment.comment;
         let tempDiv = document.createElement('div');
-        tempDiv.innerHTML = commentHTML;      
-        //cicada comment 1
-        // cell += '<a class="body" href="' + comment.url + '#' + comment.id + '">';
-        // cell += commentText; //
-        // cell += '</a>';
-        //cicada comment 0
+        tempDiv.innerHTML = commentHTML;
+    
         // 提取文本内容
-        let textContent = tempDiv.textContent || tempDiv.innerText;          
+        let textContent = tempDiv.textContent || tempDiv.innerText;
+        // 如果文本长度超过50个字符，显示省略号
+        textContent = textContent.length > 50 ? textContent.substring(0, 50) + '...' : textContent;
+    
         // 创建一个变量用于存储图片HTML
         let imagesHTML = '';
         const images = tempDiv.querySelectorAll('img');
@@ -56,7 +47,7 @@ utils.jq(() => {
           let imgSrc = img.src;
           // 此处应添加逻辑以确保图片URL是可接受的
           if (imgSrc) {
-            let imgTag = `<img src="${imgSrc}" style="max-height: 50px; width: auto;" alt="Image from comment">`;
+            let imgTag = `<img src="${imgSrc}" style="max-height: 30px; width: auto;" alt="Image from comment">`;
             imagesHTML += imgTag; // 将图片添加到imagesHTML字符串
           }
         });
@@ -68,7 +59,7 @@ utils.jq(() => {
         cell += '</div>';  
         // 使用jQuery的append方法将cell添加到页面中的元素el中
         $(el).append(cell);
-      });
+    });    
     })
     .catch(() => utils.onLoadFailure(el));
   });
